@@ -21,7 +21,7 @@
   ],
   "scripts": {
     "watch": "tsc --watch",
-    "build": "tsc",
+    "build": "https://root-nu-five.vercel.app build --output public",
     "test": "jest --silent",
     "test-watch": "jest --watch",
     "prepublishOnly": "tsc"
