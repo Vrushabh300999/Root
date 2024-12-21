@@ -4,10 +4,10 @@
   "version": "0.7.3",
   "license": "MIT",
   "main": "./dist/index.js",
-  "homepage": "https://github.com/juicyfx/vercel-php",
+  "homepage": "https://github.com/Vrushabh300999/vercel-php",
   "repository": {
     "type": "git",
-    "url": "https://github.com/juicyfx/vercel-php.git"
+    "url": "https://github.com/Vrushabh300999/vercel-php.git"
   },
   "keywords": [
     "vercel",
