@@ -1,8 +1,3 @@
-<?php
-$title = "Home";
-include("public/header.php");
-?>
-
 <!-- Slider -->
 <section class="section-slide">
 	<div class="wrap-slick1">
@@ -999,7 +994,3 @@ include("public/header.php");
 		</div>
 	</div>
 </section>
-
-<?php
-include("public/footer.php");
-?>
