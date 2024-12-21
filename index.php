@@ -2,7 +2,7 @@
 $title = "Home";
 include("public/header.php");
 ?>
-<link rel="icon" type="image/png" href="images/icons/favicon.png" />
+
 <!-- Slider -->
 <section class="section-slide">
 	<div class="wrap-slick1">
