@@ -1,6 +1,6 @@
 <?php
-include("config/connection.php");
-session_start();
+
+include("include/configuration.php");
 
 session_destroy();
 header("Location:login.php");

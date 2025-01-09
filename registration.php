@@ -83,11 +83,11 @@ include("public/header.php");
 						<input type="password" class="form-control" name="password" placeholder="Enter your Password">
 					</div>
 					<div class="mb-3">
-						<label for="exampleFormControlInput1" class="form-label">Mobile No</label>
+						<label for="exampleFormControlInput1" class="form-label">Mobile_no</label>
 						<input type="number" class="form-control" name="mobile_no" placeholder="Enter your Number">
 					</div>
 					<div class="mb-3">
-						<label for="exampleFormControlInput1" class="form-label">Image</label>
+						<label for="exampleFormControlInput1" class="form-label">Images</label>
 						<input type="file" class="form-control" name="uplodfile" id="exampleFormControlInput1">
 					</div>
 					<label for="exampleFormControlInput1" class="form-label">Gender</label>
@@ -107,6 +107,8 @@ include("public/header.php");
 		</div>
 	</div>
 </section>
+
+
 
 <?php
 include("public/footer.php");

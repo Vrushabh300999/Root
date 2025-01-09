@@ -43,47 +43,60 @@ if (isset($_POST['change'])) {
         exit;
     }
 }
-$title = "Change Password";
-include("public/header.php");
 ?>
-<section class="bg0 p-t-55 p-b-116">
-    <div>
-        <?php
-        if (isset($_REQUEST['message'])) {
-            echo $_REQUEST['message'];
-        }
-        ?>
-    </div>
-    <div class="container">
-        <div class="flex-w flex-tr">
-            <div class="size-210 bor10 p-lr-70 p-t-55 p-b-70 p-lr-15-lg w-full-md" style="margin: auto;">
-                <form method="post" enctype="multipart/form-data">
-                    <h4 class="mtext-105 cl2 txt-center p-b-30">Change Password</h4>
-                    <div class="mb-3">
-                        <label for="exampleFormControlInput1" class="form-label">Current Password*</label>
-                        <input type="password" name="current_password" id="current_password" class="form-control"
-                            value="" autofocus required />
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Change Password</title>
+    <script src="js/function.js"></script>
+</head>
+
+<body>
+    <form method="POST" action="" name="change_password">
+        <table border="1" width="40%" align="center" cellpadding="5" cellspacing="0">
+            <tr>
+                <td colspan="2" align="center">
+                    Change Password
+                    <div>
+                        <?php
+                        if (isset($_REQUEST['message'])) {
+                            echo $_REQUEST['message'];
+                        }
+                        ?>
                     </div>
-                    <div class="mb-3">
-                        <label for="exampleFormControlInput1" class="form-label">New Password*</label>
-                        <input type="password" name="new_password" id="new_password" class="form-control" value=""
-                            required />
-                    </div>
-                    <div class="mb-3">
-                        <label for="exampleFormControlInput1" class="form-label">Re-New Password*</label>
-                        <input type="password" name="re_new_password" id="re_new_password" class="form-control" value=""
-                            required />
-                    </div>
-                    <input class="flex-c-m stext-101 cl0 size-121 bg3 bor1 hov-btn3 p-lr-15 trans-04 mt-5 pointer"
-                        type="submit" name="change" id="change" value="Change" />
-                    <input class="flex-c-m stext-101 cl0 size-121 bg3 bor1 hov-btn3 p-lr-15 trans-04 mt-4 pointer"
-                        type="button" name="cancel" id="cancel" value="Cancel"
+                </td>
+            </tr>
+            <tr>
+                <td><label>Current Password*</label></td>
+                <td>
+                    <input type="password" name="current_password" id="current_password" value="" autofocus required />
+                </td>
+            </tr>
+            <tr>
+                <td><label>New Password*</label></td>
+                <td>
+                    <input type="password" name="new_password" id="new_password" value="" required />
+                </td>
+            </tr>
+            <tr>
+                <td><label>Re-New Password*</label></td>
+                <td>
+                    <input type="password" name="re_new_password" id="re_new_password" value="" required />
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <input type="submit" name="change" id="change" value="Change" />
+                    <input type="button" name="cancel" id="cancel" value="Cancel"
                         onClick="document.location.href = 'profile.php'" />
-                </form>
-            </div>
-        </div>
-    </div>
-</section>
-<?php
-include("public/footer.php");
-?>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>
