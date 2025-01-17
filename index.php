@@ -8,7 +8,7 @@ include("public/header.php");
 <section class="section-slide">
 	<div class="wrap-slick1">
 		<div class="slick1">
-			<div class="item-slick1" style="background-image: url(images/slide-01.jpg);">
+			<div class="item-slick1" style="background-image: url(/*images/salider.jpg*/);">
 				<div class="container h-full">
 					<div class="flex-col-l-m h-full p-t-100 p-b-30 respon5">
 						<div class="layer-slick1 animated visible-false" data-appear="fadeInDown" data-delay="0">
@@ -24,7 +24,7 @@ include("public/header.php");
 						</div>
 
 						<div class="layer-slick1 animated visible-false" data-appear="zoomIn" data-delay="1600">
-							<a href="product.html"
+							<a href="product.php"
 								class="flex-c-m stext-101 cl0 size-101 bg1 bor1 hov-btn1 p-lr-15 trans-04">
 								Shop Now
 							</a>
@@ -32,7 +32,7 @@ include("public/header.php");
 					</div>
 				</div>
 			</div>
-
+<!-- 
 			<div class="item-slick1" style="background-image: url(images/slide-02.jpg);">
 				<div class="container h-full">
 					<div class="flex-col-l-m h-full p-t-100 p-b-30 respon5">
@@ -81,7 +81,7 @@ include("public/header.php");
 						</div>
 					</div>
 				</div>
-			</div>
+			</div> -->
 		</div>
 	</div>
 </section>
@@ -94,18 +94,18 @@ include("public/header.php");
 			<div class="col-md-6 col-xl-4 p-b-30 m-lr-auto">
 				<!-- Block1 -->
 				<div class="block1 wrap-pic-w">
-					<img src="images/banner-01.jpg" alt="IMG-BANNER">
+					<img src="images/personal.jpg" alt="IMG-BANNER"> 
 
-					<a href="product.html"
+					<a href="product.php"
 						class="block1-txt ab-t-l s-full flex-col-l-sb p-lr-38 p-tb-34 trans-03 respon3">
 						<div class="block1-txt-child1 flex-col-l">
-							<span class="block1-name ltext-102 trans-04 p-b-8">
-								Women
+							<!-- <span class="block1-name ltext-102 trans-04 p-b-8">
+								Dry Fruits & Masala
 							</span>
 
 							<span class="block1-info stext-102 trans-04">
 								Spring 2018
-							</span>
+							</span> -->
 						</div>
 
 						<div class="block1-txt-child2 p-b-4 trans-05">
@@ -120,18 +120,18 @@ include("public/header.php");
 			<div class="col-md-6 col-xl-4 p-b-30 m-lr-auto">
 				<!-- Block1 -->
 				<div class="block1 wrap-pic-w">
-					<img src="images/banner-02.jpg" alt="IMG-BANNER">
+					<img src="images/Seasonings.jpg" alt="IMG-BANNER">
 
-					<a href="product.html"
+					<a href="product.php"
 						class="block1-txt ab-t-l s-full flex-col-l-sb p-lr-38 p-tb-34 trans-03 respon3">
 						<div class="block1-txt-child1 flex-col-l">
-							<span class="block1-name ltext-102 trans-04 p-b-8">
-								Men
+							<!-- <span class="block1-name ltext-102 trans-04 p-b-8">
+								Snacks & Foods
 							</span>
 
 							<span class="block1-info stext-102 trans-04">
 								Spring 2018
-							</span>
+							</span> -->
 						</div>
 
 						<div class="block1-txt-child2 p-b-4 trans-05">
@@ -146,18 +146,18 @@ include("public/header.php");
 			<div class="col-md-6 col-xl-4 p-b-30 m-lr-auto">
 				<!-- Block1 -->
 				<div class="block1 wrap-pic-w">
-					<img src="images/banner-03.jpg" alt="IMG-BANNER">
+					<img src="images/Snacks.jpg" alt="IMG-BANNER">
 
-					<a href="product.html"
+					<a href="product.php"
 						class="block1-txt ab-t-l s-full flex-col-l-sb p-lr-38 p-tb-34 trans-03 respon3">
 						<div class="block1-txt-child1 flex-col-l">
-							<span class="block1-name ltext-102 trans-04 p-b-8">
-								Accessories
+							<!-- <span class="block1-name ltext-102 trans-04 p-b-8">
+								Beauty & Hygiene
 							</span>
 
 							<span class="block1-info stext-102 trans-04">
 								New Trend
-							</span>
+							</span> -->
 						</div>
 
 						<div class="block1-txt-child2 p-b-4 trans-05">
@@ -189,23 +189,15 @@ include("public/header.php");
 				</button>
 
 				<button class="stext-106 cl6 hov1 bor3 trans-04 m-r-32 m-tb-5" data-filter=".women">
-					Women
+					Grocery
 				</button>
 
 				<button class="stext-106 cl6 hov1 bor3 trans-04 m-r-32 m-tb-5" data-filter=".men">
-					Men
+					House cleaning
 				</button>
 
 				<button class="stext-106 cl6 hov1 bor3 trans-04 m-r-32 m-tb-5" data-filter=".bag">
-					Bag
-				</button>
-
-				<button class="stext-106 cl6 hov1 bor3 trans-04 m-r-32 m-tb-5" data-filter=".shoes">
-					Shoes
-				</button>
-
-				<button class="stext-106 cl6 hov1 bor3 trans-04 m-r-32 m-tb-5" data-filter=".watches">
-					Watches
+					Personal & Baby Care
 				</button>
 			</div>
 
@@ -435,7 +427,7 @@ include("public/header.php");
 				<!-- Block2 -->
 				<div class="block2">
 					<div class="block2-pic hov-img0">
-						<img src="images/product-01.jpg" alt="IMG-PRODUCT">
+						<img src="images/ata1.jpg" alt="IMG-PRODUCT">
 
 						<a href="#"
 							class="block2-btn flex-c-m stext-103 cl2 size-102 bg0 bor2 hov-btn1 p-lr-15 trans-04 js-show-modal1">
@@ -470,7 +462,7 @@ include("public/header.php");
 				<!-- Block2 -->
 				<div class="block2">
 					<div class="block2-pic hov-img0">
-						<img src="images/product-02.jpg" alt="IMG-PRODUCT">
+						<img src="images/oil2.jpg" alt="IMG-PRODUCT">
 
 						<a href="#"
 							class="block2-btn flex-c-m stext-103 cl2 size-102 bg0 bor2 hov-btn1 p-lr-15 trans-04 js-show-modal1">
@@ -540,7 +532,7 @@ include("public/header.php");
 				<!-- Block2 -->
 				<div class="block2">
 					<div class="block2-pic hov-img0">
-						<img src="images/product-04.jpg" alt="IMG-PRODUCT">
+						<img src="images/rady_item2.jpg" alt="IMG-PRODUCT">
 
 						<a href="#"
 							class="block2-btn flex-c-m stext-103 cl2 size-102 bg0 bor2 hov-btn1 p-lr-15 trans-04 js-show-modal1">
@@ -575,7 +567,7 @@ include("public/header.php");
 				<!-- Block2 -->
 				<div class="block2">
 					<div class="block2-pic hov-img0">
-						<img src="images/product-05.jpg" alt="IMG-PRODUCT">
+						<img src="images/rady_item3.jpg" alt="IMG-PRODUCT">
 
 						<a href="#"
 							class="block2-btn flex-c-m stext-103 cl2 size-102 bg0 bor2 hov-btn1 p-lr-15 trans-04 js-show-modal1">
@@ -645,7 +637,7 @@ include("public/header.php");
 				<!-- Block2 -->
 				<div class="block2">
 					<div class="block2-pic hov-img0">
-						<img src="images/product-07.jpg" alt="IMG-PRODUCT">
+						<img src="images/besan2.jpg" alt="IMG-PRODUCT">
 
 						<a href="#"
 							class="block2-btn flex-c-m stext-103 cl2 size-102 bg0 bor2 hov-btn1 p-lr-15 trans-04 js-show-modal1">
@@ -680,7 +672,7 @@ include("public/header.php");
 				<!-- Block2 -->
 				<div class="block2">
 					<div class="block2-pic hov-img0">
-						<img src="images/product-08.jpg" alt="IMG-PRODUCT">
+						<img src="images/powder3.jpg" alt="IMG-PRODUCT">
 
 						<a href="#"
 							class="block2-btn flex-c-m stext-103 cl2 size-102 bg0 bor2 hov-btn1 p-lr-15 trans-04 js-show-modal1">
@@ -750,7 +742,7 @@ include("public/header.php");
 				<!-- Block2 -->
 				<div class="block2">
 					<div class="block2-pic hov-img0">
-						<img src="images/product-10.jpg" alt="IMG-PRODUCT">
+						<img src="images/powder2.jpg" alt="IMG-PRODUCT">
 
 						<a href="#"
 							class="block2-btn flex-c-m stext-103 cl2 size-102 bg0 bor2 hov-btn1 p-lr-15 trans-04 js-show-modal1">
@@ -855,7 +847,7 @@ include("public/header.php");
 				<!-- Block2 -->
 				<div class="block2">
 					<div class="block2-pic hov-img0">
-						<img src="images/product-13.jpg" alt="IMG-PRODUCT">
+						<img src="images/masala2.jpg" alt="IMG-PRODUCT">
 
 						<a href="#"
 							class="block2-btn flex-c-m stext-103 cl2 size-102 bg0 bor2 hov-btn1 p-lr-15 trans-04 js-show-modal1">
@@ -890,7 +882,7 @@ include("public/header.php");
 				<!-- Block2 -->
 				<div class="block2">
 					<div class="block2-pic hov-img0">
-						<img src="images/product-14.jpg" alt="IMG-PRODUCT">
+						<img src="images/tea.jpg" alt="IMG-PRODUCT">
 
 						<a href="#"
 							class="block2-btn flex-c-m stext-103 cl2 size-102 bg0 bor2 hov-btn1 p-lr-15 trans-04 js-show-modal1">
@@ -960,7 +952,7 @@ include("public/header.php");
 				<!-- Block2 -->
 				<div class="block2">
 					<div class="block2-pic hov-img0">
-						<img src="images/product-16.jpg" alt="IMG-PRODUCT">
+						<img src="images/chyawanprash.jpg" alt="IMG-PRODUCT">
 
 						<a href="#"
 							class="block2-btn flex-c-m stext-103 cl2 size-102 bg0 bor2 hov-btn1 p-lr-15 trans-04 js-show-modal1">
@@ -990,6 +982,1513 @@ include("public/header.php");
 					</div>
 				</div>
 			</div>
+
+			<div class="col-sm-6 col-md-4 col-lg-3 p-b-35 isotope-item women">
+				<!-- Block2 -->
+				<div class="block2">
+					<div class="block2-pic hov-img0">
+						<img src="images/coffee.jpg" alt="IMG-PRODUCT">
+
+						<a href="#"
+							class="block2-btn flex-c-m stext-103 cl2 size-102 bg0 bor2 hov-btn1 p-lr-15 trans-04 js-show-modal1">
+							Quick View
+						</a>
+					</div>
+
+					<div class="block2-txt flex-w flex-t p-t-14">
+						<div class="block2-txt-child1 flex-col-l ">
+							<a href="product-detail.html" class="stext-104 cl4 hov-cl1 trans-04 js-name-b2 p-b-6">
+								Square Neck Back
+							</a>
+
+							<span class="stext-105 cl3">
+								$29.64
+							</span>
+						</div>
+
+						<div class="block2-txt-child2 flex-r p-t-3">
+							<a href="#" class="btn-addwish-b2 dis-block pos-relative js-addwish-b2">
+								<img class="icon-heart1 dis-block trans-04" src="images/icons/icon-heart-01.png"
+									alt="ICON">
+								<img class="icon-heart2 dis-block trans-04 ab-t-l" src="images/icons/icon-heart-02.png"
+									alt="ICON">
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-sm-6 col-md-4 col-lg-3 p-b-35 isotope-item women">
+				<!-- Block2 -->
+				<div class="block2">
+					<div class="block2-pic hov-img0">
+						<img src="images/honey.jpg" alt="IMG-PRODUCT">
+
+						<a href="#"
+							class="block2-btn flex-c-m stext-103 cl2 size-102 bg0 bor2 hov-btn1 p-lr-15 trans-04 js-show-modal1">
+							Quick View
+						</a>
+					</div>
+
+					<div class="block2-txt flex-w flex-t p-t-14">
+						<div class="block2-txt-child1 flex-col-l ">
+							<a href="product-detail.html" class="stext-104 cl4 hov-cl1 trans-04 js-name-b2 p-b-6">
+								Square Neck Back
+							</a>
+
+							<span class="stext-105 cl3">
+								$29.64
+							</span>
+						</div>
+
+						<div class="block2-txt-child2 flex-r p-t-3">
+							<a href="#" class="btn-addwish-b2 dis-block pos-relative js-addwish-b2">
+								<img class="icon-heart1 dis-block trans-04" src="images/icons/icon-heart-01.png"
+									alt="ICON">
+								<img class="icon-heart2 dis-block trans-04 ab-t-l" src="images/icons/icon-heart-02.png"
+									alt="ICON">
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-sm-6 col-md-4 col-lg-3 p-b-35 isotope-item women">
+				<!-- Block2 -->
+				<div class="block2">
+					<div class="block2-pic hov-img0">
+						<img src="images/rice.jpg" alt="IMG-PRODUCT">
+
+						<a href="#"
+							class="block2-btn flex-c-m stext-103 cl2 size-102 bg0 bor2 hov-btn1 p-lr-15 trans-04 js-show-modal1">
+							Quick View
+						</a>
+					</div>
+
+					<div class="block2-txt flex-w flex-t p-t-14">
+						<div class="block2-txt-child1 flex-col-l ">
+							<a href="product-detail.html" class="stext-104 cl4 hov-cl1 trans-04 js-name-b2 p-b-6">
+								Square Neck Back
+							</a>
+
+							<span class="stext-105 cl3">
+								$29.64
+							</span>
+						</div>
+
+						<div class="block2-txt-child2 flex-r p-t-3">
+							<a href="#" class="btn-addwish-b2 dis-block pos-relative js-addwish-b2">
+								<img class="icon-heart1 dis-block trans-04" src="images/icons/icon-heart-01.png"
+									alt="ICON">
+								<img class="icon-heart2 dis-block trans-04 ab-t-l" src="images/icons/icon-heart-02.png"
+									alt="ICON">
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-sm-6 col-md-4 col-lg-3 p-b-35 isotope-item women">
+				<!-- Block2 -->
+				<div class="block2">
+					<div class="block2-pic hov-img0">
+						<img src="images/dal.jpg" alt="IMG-PRODUCT">
+
+						<a href="#"
+							class="block2-btn flex-c-m stext-103 cl2 size-102 bg0 bor2 hov-btn1 p-lr-15 trans-04 js-show-modal1">
+							Quick View
+						</a>
+					</div>
+
+					<div class="block2-txt flex-w flex-t p-t-14">
+						<div class="block2-txt-child1 flex-col-l ">
+							<a href="product-detail.html" class="stext-104 cl4 hov-cl1 trans-04 js-name-b2 p-b-6">
+								Square Neck Back
+							</a>
+
+							<span class="stext-105 cl3">
+								$29.64
+							</span>
+						</div>
+
+						<div class="block2-txt-child2 flex-r p-t-3">
+							<a href="#" class="btn-addwish-b2 dis-block pos-relative js-addwish-b2">
+								<img class="icon-heart1 dis-block trans-04" src="images/icons/icon-heart-01.png"
+									alt="ICON">
+								<img class="icon-heart2 dis-block trans-04 ab-t-l" src="images/icons/icon-heart-02.png"
+									alt="ICON">
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-sm-6 col-md-4 col-lg-3 p-b-35 isotope-item women">
+				<!-- Block2 -->
+				<div class="block2">
+					<div class="block2-pic hov-img0">
+						<img src="images/dal1.jpg" alt="IMG-PRODUCT">
+
+						<a href="#"
+							class="block2-btn flex-c-m stext-103 cl2 size-102 bg0 bor2 hov-btn1 p-lr-15 trans-04 js-show-modal1">
+							Quick View
+						</a>
+					</div>
+
+					<div class="block2-txt flex-w flex-t p-t-14">
+						<div class="block2-txt-child1 flex-col-l ">
+							<a href="product-detail.html" class="stext-104 cl4 hov-cl1 trans-04 js-name-b2 p-b-6">
+								Square Neck Back
+							</a>
+
+							<span class="stext-105 cl3">
+								$29.64
+							</span>
+						</div>
+
+						<div class="block2-txt-child2 flex-r p-t-3">
+							<a href="#" class="btn-addwish-b2 dis-block pos-relative js-addwish-b2">
+								<img class="icon-heart1 dis-block trans-04" src="images/icons/icon-heart-01.png"
+									alt="ICON">
+								<img class="icon-heart2 dis-block trans-04 ab-t-l" src="images/icons/icon-heart-02.png"
+									alt="ICON">
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-sm-6 col-md-4 col-lg-3 p-b-35 isotope-item women">
+				<!-- Block2 -->
+				<div class="block2">
+					<div class="block2-pic hov-img0">
+						<img src="images/dal2.jpg" alt="IMG-PRODUCT">
+
+						<a href="#"
+							class="block2-btn flex-c-m stext-103 cl2 size-102 bg0 bor2 hov-btn1 p-lr-15 trans-04 js-show-modal1">
+							Quick View
+						</a>
+					</div>
+
+					<div class="block2-txt flex-w flex-t p-t-14">
+						<div class="block2-txt-child1 flex-col-l ">
+							<a href="product-detail.html" class="stext-104 cl4 hov-cl1 trans-04 js-name-b2 p-b-6">
+								Square Neck Back
+							</a>
+
+							<span class="stext-105 cl3">
+								$29.64
+							</span>
+						</div>
+
+						<div class="block2-txt-child2 flex-r p-t-3">
+							<a href="#" class="btn-addwish-b2 dis-block pos-relative js-addwish-b2">
+								<img class="icon-heart1 dis-block trans-04" src="images/icons/icon-heart-01.png"
+									alt="ICON">
+								<img class="icon-heart2 dis-block trans-04 ab-t-l" src="images/icons/icon-heart-02.png"
+									alt="ICON">
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-sm-6 col-md-4 col-lg-3 p-b-35 isotope-item women">
+				<!-- Block2 -->
+				<div class="block2">
+					<div class="block2-pic hov-img0">
+						<img src="images/dal3.jpg" alt="IMG-PRODUCT">
+
+						<a href="#"
+							class="block2-btn flex-c-m stext-103 cl2 size-102 bg0 bor2 hov-btn1 p-lr-15 trans-04 js-show-modal1">
+							Quick View
+						</a>
+					</div>
+
+					<div class="block2-txt flex-w flex-t p-t-14">
+						<div class="block2-txt-child1 flex-col-l ">
+							<a href="product-detail.html" class="stext-104 cl4 hov-cl1 trans-04 js-name-b2 p-b-6">
+								Square Neck Back
+							</a>
+
+							<span class="stext-105 cl3">
+								$29.64
+							</span>
+						</div>
+
+						<div class="block2-txt-child2 flex-r p-t-3">
+							<a href="#" class="btn-addwish-b2 dis-block pos-relative js-addwish-b2">
+								<img class="icon-heart1 dis-block trans-04" src="images/icons/icon-heart-01.png"
+									alt="ICON">
+								<img class="icon-heart2 dis-block trans-04 ab-t-l" src="images/icons/icon-heart-02.png"
+									alt="ICON">
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-sm-6 col-md-4 col-lg-3 p-b-35 isotope-item women">
+				<!-- Block2 -->
+				<div class="block2">
+					<div class="block2-pic hov-img0">
+						<img src="images/dal4.jpg" alt="IMG-PRODUCT">
+
+						<a href="#"
+							class="block2-btn flex-c-m stext-103 cl2 size-102 bg0 bor2 hov-btn1 p-lr-15 trans-04 js-show-modal1">
+							Quick View
+						</a>
+					</div>
+
+					<div class="block2-txt flex-w flex-t p-t-14">
+						<div class="block2-txt-child1 flex-col-l ">
+							<a href="product-detail.html" class="stext-104 cl4 hov-cl1 trans-04 js-name-b2 p-b-6">
+								Square Neck Back
+							</a>
+
+							<span class="stext-105 cl3">
+								$29.64
+							</span>
+						</div>
+
+						<div class="block2-txt-child2 flex-r p-t-3">
+							<a href="#" class="btn-addwish-b2 dis-block pos-relative js-addwish-b2">
+								<img class="icon-heart1 dis-block trans-04" src="images/icons/icon-heart-01.png"
+									alt="ICON">
+								<img class="icon-heart2 dis-block trans-04 ab-t-l" src="images/icons/icon-heart-02.png"
+									alt="ICON">
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-sm-6 col-md-4 col-lg-3 p-b-35 isotope-item women">
+				<!-- Block2 -->
+				<div class="block2">
+					<div class="block2-pic hov-img0">
+						<img src="images/dal5.jpg" alt="IMG-PRODUCT">
+
+						<a href="#"
+							class="block2-btn flex-c-m stext-103 cl2 size-102 bg0 bor2 hov-btn1 p-lr-15 trans-04 js-show-modal1">
+							Quick View
+						</a>
+					</div>
+
+					<div class="block2-txt flex-w flex-t p-t-14">
+						<div class="block2-txt-child1 flex-col-l ">
+							<a href="product-detail.html" class="stext-104 cl4 hov-cl1 trans-04 js-name-b2 p-b-6">
+								Square Neck Back
+							</a>
+
+							<span class="stext-105 cl3">
+								$29.64
+							</span>
+						</div>
+
+						<div class="block2-txt-child2 flex-r p-t-3">
+							<a href="#" class="btn-addwish-b2 dis-block pos-relative js-addwish-b2">
+								<img class="icon-heart1 dis-block trans-04" src="images/icons/icon-heart-01.png"
+									alt="ICON">
+								<img class="icon-heart2 dis-block trans-04 ab-t-l" src="images/icons/icon-heart-02.png"
+									alt="ICON">
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+				<div class="col-sm-6 col-md-4 col-lg-3 p-b-35 isotope-item women">
+				<!-- Block2 -->
+				<div class="block2">
+					<div class="block2-pic hov-img0">
+						<img src="images/dal6.jpg" alt="IMG-PRODUCT">
+
+						<a href="#"
+							class="block2-btn flex-c-m stext-103 cl2 size-102 bg0 bor2 hov-btn1 p-lr-15 trans-04 js-show-modal1">
+							Quick View
+						</a>
+					</div>
+
+					<div class="block2-txt flex-w flex-t p-t-14">
+						<div class="block2-txt-child1 flex-col-l ">
+							<a href="product-detail.html" class="stext-104 cl4 hov-cl1 trans-04 js-name-b2 p-b-6">
+								Square Neck Back
+							</a>
+
+							<span class="stext-105 cl3">
+								$29.64
+							</span>
+						</div>
+
+						<div class="block2-txt-child2 flex-r p-t-3">
+							<a href="#" class="btn-addwish-b2 dis-block pos-relative js-addwish-b2">
+								<img class="icon-heart1 dis-block trans-04" src="images/icons/icon-heart-01.png"
+									alt="ICON">
+								<img class="icon-heart2 dis-block trans-04 ab-t-l" src="images/icons/icon-heart-02.png"
+									alt="ICON">
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="col-sm-6 col-md-4 col-lg-3 p-b-35 isotope-item women">
+				<!-- Block2 -->
+				<div class="block2">
+					<div class="block2-pic hov-img0">
+						<img src="images/dal7.jpg" alt="IMG-PRODUCT">
+
+						<a href="#"
+							class="block2-btn flex-c-m stext-103 cl2 size-102 bg0 bor2 hov-btn1 p-lr-15 trans-04 js-show-modal1">
+							Quick View
+						</a>
+					</div>
+
+					<div class="block2-txt flex-w flex-t p-t-14">
+						<div class="block2-txt-child1 flex-col-l ">
+							<a href="product-detail.html" class="stext-104 cl4 hov-cl1 trans-04 js-name-b2 p-b-6">
+								Square Neck Back
+							</a>
+
+							<span class="stext-105 cl3">
+								$29.64
+							</span>
+						</div>
+
+						<div class="block2-txt-child2 flex-r p-t-3">
+							<a href="#" class="btn-addwish-b2 dis-block pos-relative js-addwish-b2">
+								<img class="icon-heart1 dis-block trans-04" src="images/icons/icon-heart-01.png"
+									alt="ICON">
+								<img class="icon-heart2 dis-block trans-04 ab-t-l" src="images/icons/icon-heart-02.png"
+									alt="ICON">
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-sm-6 col-md-4 col-lg-3 p-b-35 isotope-item women">
+				<!-- Block2 -->
+				<div class="block2">
+					<div class="block2-pic hov-img0">
+						<img src="images/dal8.jpg" alt="IMG-PRODUCT">
+
+						<a href="#"
+							class="block2-btn flex-c-m stext-103 cl2 size-102 bg0 bor2 hov-btn1 p-lr-15 trans-04 js-show-modal1">
+							Quick View
+						</a>
+					</div>
+
+					<div class="block2-txt flex-w flex-t p-t-14">
+						<div class="block2-txt-child1 flex-col-l ">
+							<a href="product-detail.html" class="stext-104 cl4 hov-cl1 trans-04 js-name-b2 p-b-6">
+								Square Neck Back
+							</a>
+
+							<span class="stext-105 cl3">
+								$29.64
+							</span>
+						</div>
+
+						<div class="block2-txt-child2 flex-r p-t-3">
+							<a href="#" class="btn-addwish-b2 dis-block pos-relative js-addwish-b2">
+								<img class="icon-heart1 dis-block trans-04" src="images/icons/icon-heart-01.png"
+									alt="ICON">
+								<img class="icon-heart2 dis-block trans-04 ab-t-l" src="images/icons/icon-heart-02.png"
+									alt="ICON">
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-sm-6 col-md-4 col-lg-3 p-b-35 isotope-item women">
+				<!-- Block2 -->
+				<div class="block2">
+					<div class="block2-pic hov-img0">
+						<img src="images/poha.jpg" alt="IMG-PRODUCT">
+
+						<a href="#"
+							class="block2-btn flex-c-m stext-103 cl2 size-102 bg0 bor2 hov-btn1 p-lr-15 trans-04 js-show-modal1">
+							Quick View
+						</a>
+					</div>
+
+					<div class="block2-txt flex-w flex-t p-t-14">
+						<div class="block2-txt-child1 flex-col-l ">
+							<a href="product-detail.html" class="stext-104 cl4 hov-cl1 trans-04 js-name-b2 p-b-6">
+								Square Neck Back
+							</a>
+
+							<span class="stext-105 cl3">
+								$29.64
+							</span>
+						</div>
+
+						<div class="block2-txt-child2 flex-r p-t-3">
+							<a href="#" class="btn-addwish-b2 dis-block pos-relative js-addwish-b2">
+								<img class="icon-heart1 dis-block trans-04" src="images/icons/icon-heart-01.png"
+									alt="ICON">
+								<img class="icon-heart2 dis-block trans-04 ab-t-l" src="images/icons/icon-heart-02.png"
+									alt="ICON">
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-sm-6 col-md-4 col-lg-3 p-b-35 isotope-item women">
+				<!-- Block2 -->
+				<div class="block2">
+					<div class="block2-pic hov-img0">
+						<img src="images/seeds1.jpg" alt="IMG-PRODUCT">
+
+						<a href="#"
+							class="block2-btn flex-c-m stext-103 cl2 size-102 bg0 bor2 hov-btn1 p-lr-15 trans-04 js-show-modal1">
+							Quick View
+						</a>
+					</div>
+
+					<div class="block2-txt flex-w flex-t p-t-14">
+						<div class="block2-txt-child1 flex-col-l ">
+							<a href="product-detail.html" class="stext-104 cl4 hov-cl1 trans-04 js-name-b2 p-b-6">
+								Square Neck Back
+							</a>
+
+							<span class="stext-105 cl3">
+								$29.64
+							</span>
+						</div>
+
+						<div class="block2-txt-child2 flex-r p-t-3">
+							<a href="#" class="btn-addwish-b2 dis-block pos-relative js-addwish-b2">
+								<img class="icon-heart1 dis-block trans-04" src="images/icons/icon-heart-01.png"
+									alt="ICON">
+								<img class="icon-heart2 dis-block trans-04 ab-t-l" src="images/icons/icon-heart-02.png"
+									alt="ICON">
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-sm-6 col-md-4 col-lg-3 p-b-35 isotope-item women">
+				<!-- Block2 -->
+				<div class="block2">
+					<div class="block2-pic hov-img0">
+						<img src="images/seeds2.jpg" alt="IMG-PRODUCT">
+
+						<a href="#"
+							class="block2-btn flex-c-m stext-103 cl2 size-102 bg0 bor2 hov-btn1 p-lr-15 trans-04 js-show-modal1">
+							Quick View
+						</a>
+					</div>
+
+					<div class="block2-txt flex-w flex-t p-t-14">
+						<div class="block2-txt-child1 flex-col-l ">
+							<a href="product-detail.html" class="stext-104 cl4 hov-cl1 trans-04 js-name-b2 p-b-6">
+								Square Neck Back
+							</a>
+
+							<span class="stext-105 cl3">
+								$29.64
+							</span>
+						</div>
+
+						<div class="block2-txt-child2 flex-r p-t-3">
+							<a href="#" class="btn-addwish-b2 dis-block pos-relative js-addwish-b2">
+								<img class="icon-heart1 dis-block trans-04" src="images/icons/icon-heart-01.png"
+									alt="ICON">
+								<img class="icon-heart2 dis-block trans-04 ab-t-l" src="images/icons/icon-heart-02.png"
+									alt="ICON">
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-sm-6 col-md-4 col-lg-3 p-b-35 isotope-item women">
+				<!-- Block2 -->
+				<div class="block2">
+					<div class="block2-pic hov-img0">
+						<img src="images/seeds3.jpg" alt="IMG-PRODUCT">
+
+						<a href="#"
+							class="block2-btn flex-c-m stext-103 cl2 size-102 bg0 bor2 hov-btn1 p-lr-15 trans-04 js-show-modal1">
+							Quick View
+						</a>
+					</div>
+
+					<div class="block2-txt flex-w flex-t p-t-14">
+						<div class="block2-txt-child1 flex-col-l ">
+							<a href="product-detail.html" class="stext-104 cl4 hov-cl1 trans-04 js-name-b2 p-b-6">
+								Square Neck Back
+							</a>
+
+							<span class="stext-105 cl3">
+								$29.64
+							</span>
+						</div>
+
+						<div class="block2-txt-child2 flex-r p-t-3">
+							<a href="#" class="btn-addwish-b2 dis-block pos-relative js-addwish-b2">
+								<img class="icon-heart1 dis-block trans-04" src="images/icons/icon-heart-01.png"
+									alt="ICON">
+								<img class="icon-heart2 dis-block trans-04 ab-t-l" src="images/icons/icon-heart-02.png"
+									alt="ICON">
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-sm-6 col-md-4 col-lg-3 p-b-35 isotope-item women">
+				<!-- Block2 -->
+				<div class="block2">
+					<div class="block2-pic hov-img0">
+						<img src="images/seeds4.jpg" alt="IMG-PRODUCT">
+
+						<a href="#"
+							class="block2-btn flex-c-m stext-103 cl2 size-102 bg0 bor2 hov-btn1 p-lr-15 trans-04 js-show-modal1">
+							Quick View
+						</a>
+					</div>
+
+					<div class="block2-txt flex-w flex-t p-t-14">
+						<div class="block2-txt-child1 flex-col-l ">
+							<a href="product-detail.html" class="stext-104 cl4 hov-cl1 trans-04 js-name-b2 p-b-6">
+								Square Neck Back
+							</a>
+
+							<span class="stext-105 cl3">
+								$29.64
+							</span>
+						</div>
+
+						<div class="block2-txt-child2 flex-r p-t-3">
+							<a href="#" class="btn-addwish-b2 dis-block pos-relative js-addwish-b2">
+								<img class="icon-heart1 dis-block trans-04" src="images/icons/icon-heart-01.png"
+									alt="ICON">
+								<img class="icon-heart2 dis-block trans-04 ab-t-l" src="images/icons/icon-heart-02.png"
+									alt="ICON">
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-sm-6 col-md-4 col-lg-3 p-b-35 isotope-item women">
+				<!-- Block2 -->
+				<div class="block2">
+					<div class="block2-pic hov-img0">
+						<img src="images/seeds5.jpg" alt="IMG-PRODUCT">
+
+						<a href="#"
+							class="block2-btn flex-c-m stext-103 cl2 size-102 bg0 bor2 hov-btn1 p-lr-15 trans-04 js-show-modal1">
+							Quick View
+						</a>
+					</div>
+
+					<div class="block2-txt flex-w flex-t p-t-14">
+						<div class="block2-txt-child1 flex-col-l ">
+							<a href="product-detail.html" class="stext-104 cl4 hov-cl1 trans-04 js-name-b2 p-b-6">
+								Square Neck Back
+							</a>
+
+							<span class="stext-105 cl3">
+								$29.64
+							</span>
+						</div>
+
+						<div class="block2-txt-child2 flex-r p-t-3">
+							<a href="#" class="btn-addwish-b2 dis-block pos-relative js-addwish-b2">
+								<img class="icon-heart1 dis-block trans-04" src="images/icons/icon-heart-01.png"
+									alt="ICON">
+								<img class="icon-heart2 dis-block trans-04 ab-t-l" src="images/icons/icon-heart-02.png"
+									alt="ICON">
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-sm-6 col-md-4 col-lg-3 p-b-35 isotope-item women">
+				<!-- Block2 -->
+				<div class="block2">
+					<div class="block2-pic hov-img0">
+						<img src="images/seeds6.jpg" alt="IMG-PRODUCT">
+
+						<a href="#"
+							class="block2-btn flex-c-m stext-103 cl2 size-102 bg0 bor2 hov-btn1 p-lr-15 trans-04 js-show-modal1">
+							Quick View
+						</a>
+					</div>
+
+					<div class="block2-txt flex-w flex-t p-t-14">
+						<div class="block2-txt-child1 flex-col-l ">
+							<a href="product-detail.html" class="stext-104 cl4 hov-cl1 trans-04 js-name-b2 p-b-6">
+								Square Neck Back
+							</a>
+
+							<span class="stext-105 cl3">
+								$29.64
+							</span>
+						</div>
+
+						<div class="block2-txt-child2 flex-r p-t-3">
+							<a href="#" class="btn-addwish-b2 dis-block pos-relative js-addwish-b2">
+								<img class="icon-heart1 dis-block trans-04" src="images/icons/icon-heart-01.png"
+									alt="ICON">
+								<img class="icon-heart2 dis-block trans-04 ab-t-l" src="images/icons/icon-heart-02.png"
+									alt="ICON">
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-sm-6 col-md-4 col-lg-3 p-b-35 isotope-item women">
+				<!-- Block2 -->
+				<div class="block2">
+					<div class="block2-pic hov-img0">
+						<img src="images/dry1.jpg" alt="IMG-PRODUCT">
+
+						<a href="#"
+							class="block2-btn flex-c-m stext-103 cl2 size-102 bg0 bor2 hov-btn1 p-lr-15 trans-04 js-show-modal1">
+							Quick View
+						</a>
+					</div>
+
+					<div class="block2-txt flex-w flex-t p-t-14">
+						<div class="block2-txt-child1 flex-col-l ">
+							<a href="product-detail.html" class="stext-104 cl4 hov-cl1 trans-04 js-name-b2 p-b-6">
+								Square Neck Back
+							</a>
+
+							<span class="stext-105 cl3">
+								$29.64
+							</span>
+						</div>
+
+						<div class="block2-txt-child2 flex-r p-t-3">
+							<a href="#" class="btn-addwish-b2 dis-block pos-relative js-addwish-b2">
+								<img class="icon-heart1 dis-block trans-04" src="images/icons/icon-heart-01.png"
+									alt="ICON">
+								<img class="icon-heart2 dis-block trans-04 ab-t-l" src="images/icons/icon-heart-02.png"
+									alt="ICON">
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-sm-6 col-md-4 col-lg-3 p-b-35 isotope-item women">
+				<!-- Block2 -->
+				<div class="block2">
+					<div class="block2-pic hov-img0">
+						<img src="images/dry2.jpg" alt="IMG-PRODUCT">
+
+						<a href="#"
+							class="block2-btn flex-c-m stext-103 cl2 size-102 bg0 bor2 hov-btn1 p-lr-15 trans-04 js-show-modal1">
+							Quick View
+						</a>
+					</div>
+
+					<div class="block2-txt flex-w flex-t p-t-14">
+						<div class="block2-txt-child1 flex-col-l ">
+							<a href="product-detail.html" class="stext-104 cl4 hov-cl1 trans-04 js-name-b2 p-b-6">
+								Square Neck Back
+							</a>
+
+							<span class="stext-105 cl3">
+								$29.64
+							</span>
+						</div>
+
+						<div class="block2-txt-child2 flex-r p-t-3">
+							<a href="#" class="btn-addwish-b2 dis-block pos-relative js-addwish-b2">
+								<img class="icon-heart1 dis-block trans-04" src="images/icons/icon-heart-01.png"
+									alt="ICON">
+								<img class="icon-heart2 dis-block trans-04 ab-t-l" src="images/icons/icon-heart-02.png"
+									alt="ICON">
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-sm-6 col-md-4 col-lg-3 p-b-35 isotope-item women">
+				<!-- Block2 -->
+				<div class="block2">
+					<div class="block2-pic hov-img0">
+						<img src="images/dry3.jpg" alt="IMG-PRODUCT">
+
+						<a href="#"
+							class="block2-btn flex-c-m stext-103 cl2 size-102 bg0 bor2 hov-btn1 p-lr-15 trans-04 js-show-modal1">
+							Quick View
+						</a>
+					</div>
+
+					<div class="block2-txt flex-w flex-t p-t-14">
+						<div class="block2-txt-child1 flex-col-l ">
+							<a href="product-detail.html" class="stext-104 cl4 hov-cl1 trans-04 js-name-b2 p-b-6">
+								Square Neck Back
+							</a>
+
+							<span class="stext-105 cl3">
+								$29.64
+							</span>
+						</div>
+
+						<div class="block2-txt-child2 flex-r p-t-3">
+							<a href="#" class="btn-addwish-b2 dis-block pos-relative js-addwish-b2">
+								<img class="icon-heart1 dis-block trans-04" src="images/icons/icon-heart-01.png"
+									alt="ICON">
+								<img class="icon-heart2 dis-block trans-04 ab-t-l" src="images/icons/icon-heart-02.png"
+									alt="ICON">
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-sm-6 col-md-4 col-lg-3 p-b-35 isotope-item women">
+				<!-- Block2 -->
+				<div class="block2">
+					<div class="block2-pic hov-img0">
+						<img src="images/dry4.jpg" alt="IMG-PRODUCT">
+
+						<a href="#"
+							class="block2-btn flex-c-m stext-103 cl2 size-102 bg0 bor2 hov-btn1 p-lr-15 trans-04 js-show-modal1">
+							Quick View
+						</a>
+					</div>
+
+					<div class="block2-txt flex-w flex-t p-t-14">
+						<div class="block2-txt-child1 flex-col-l ">
+							<a href="product-detail.html" class="stext-104 cl4 hov-cl1 trans-04 js-name-b2 p-b-6">
+								Square Neck Back
+							</a>
+
+							<span class="stext-105 cl3">
+								$29.64
+							</span>
+						</div>
+
+						<div class="block2-txt-child2 flex-r p-t-3">
+							<a href="#" class="btn-addwish-b2 dis-block pos-relative js-addwish-b2">
+								<img class="icon-heart1 dis-block trans-04" src="images/icons/icon-heart-01.png"
+									alt="ICON">
+								<img class="icon-heart2 dis-block trans-04 ab-t-l" src="images/icons/icon-heart-02.png"
+									alt="ICON">
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-sm-6 col-md-4 col-lg-3 p-b-35 isotope-item women">
+				<!-- Block2 -->
+				<div class="block2">
+					<div class="block2-pic hov-img0">
+						<img src="images/dry5.jpg" alt="IMG-PRODUCT">
+
+						<a href="#"
+							class="block2-btn flex-c-m stext-103 cl2 size-102 bg0 bor2 hov-btn1 p-lr-15 trans-04 js-show-modal1">
+							Quick View
+						</a>
+					</div>
+
+					<div class="block2-txt flex-w flex-t p-t-14">
+						<div class="block2-txt-child1 flex-col-l ">
+							<a href="product-detail.html" class="stext-104 cl4 hov-cl1 trans-04 js-name-b2 p-b-6">
+								Square Neck Back
+							</a>
+
+							<span class="stext-105 cl3">
+								$29.64
+							</span>
+						</div>
+
+						<div class="block2-txt-child2 flex-r p-t-3">
+							<a href="#" class="btn-addwish-b2 dis-block pos-relative js-addwish-b2">
+								<img class="icon-heart1 dis-block trans-04" src="images/icons/icon-heart-01.png"
+									alt="ICON">
+								<img class="icon-heart2 dis-block trans-04 ab-t-l" src="images/icons/icon-heart-02.png"
+									alt="ICON">
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-sm-6 col-md-4 col-lg-3 p-b-35 isotope-item women">
+				<!-- Block2 -->
+				<div class="block2">
+					<div class="block2-pic hov-img0">
+						<img src="images/dry6.jpg" alt="IMG-PRODUCT">
+
+						<a href="#"
+							class="block2-btn flex-c-m stext-103 cl2 size-102 bg0 bor2 hov-btn1 p-lr-15 trans-04 js-show-modal1">
+							Quick View
+						</a>
+					</div>
+
+					<div class="block2-txt flex-w flex-t p-t-14">
+						<div class="block2-txt-child1 flex-col-l ">
+							<a href="product-detail.html" class="stext-104 cl4 hov-cl1 trans-04 js-name-b2 p-b-6">
+								Square Neck Back
+							</a>
+
+							<span class="stext-105 cl3">
+								$29.64
+							</span>
+						</div>
+
+						<div class="block2-txt-child2 flex-r p-t-3">
+							<a href="#" class="btn-addwish-b2 dis-block pos-relative js-addwish-b2">
+								<img class="icon-heart1 dis-block trans-04" src="images/icons/icon-heart-01.png"
+									alt="ICON">
+								<img class="icon-heart2 dis-block trans-04 ab-t-l" src="images/icons/icon-heart-02.png"
+									alt="ICON">
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-sm-6 col-md-4 col-lg-3 p-b-35 isotope-item women">
+				<!-- Block2 -->
+				<div class="block2">
+					<div class="block2-pic hov-img0">
+						<img src="images/dry7.jpg" alt="IMG-PRODUCT">
+
+						<a href="#"
+							class="block2-btn flex-c-m stext-103 cl2 size-102 bg0 bor2 hov-btn1 p-lr-15 trans-04 js-show-modal1">
+							Quick View
+						</a>
+					</div>
+
+					<div class="block2-txt flex-w flex-t p-t-14">
+						<div class="block2-txt-child1 flex-col-l ">
+							<a href="product-detail.html" class="stext-104 cl4 hov-cl1 trans-04 js-name-b2 p-b-6">
+								Square Neck Back
+							</a>
+
+							<span class="stext-105 cl3">
+								$29.64
+							</span>
+						</div>
+
+						<div class="block2-txt-child2 flex-r p-t-3">
+							<a href="#" class="btn-addwish-b2 dis-block pos-relative js-addwish-b2">
+								<img class="icon-heart1 dis-block trans-04" src="images/icons/icon-heart-01.png"
+									alt="ICON">
+								<img class="icon-heart2 dis-block trans-04 ab-t-l" src="images/icons/icon-heart-02.png"
+									alt="ICON">
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-sm-6 col-md-4 col-lg-3 p-b-35 isotope-item women">
+				<!-- Block2 -->
+				<div class="block2">
+					<div class="block2-pic hov-img0">
+						<img src="images/dry8.jpg" alt="IMG-PRODUCT">
+
+						<a href="#"
+							class="block2-btn flex-c-m stext-103 cl2 size-102 bg0 bor2 hov-btn1 p-lr-15 trans-04 js-show-modal1">
+							Quick View
+						</a>
+					</div>
+
+					<div class="block2-txt flex-w flex-t p-t-14">
+						<div class="block2-txt-child1 flex-col-l ">
+							<a href="product-detail.html" class="stext-104 cl4 hov-cl1 trans-04 js-name-b2 p-b-6">
+								Square Neck Back
+							</a>
+
+							<span class="stext-105 cl3">
+								$29.64
+							</span>
+						</div>
+
+						<div class="block2-txt-child2 flex-r p-t-3">
+							<a href="#" class="btn-addwish-b2 dis-block pos-relative js-addwish-b2">
+								<img class="icon-heart1 dis-block trans-04" src="images/icons/icon-heart-01.png"
+									alt="ICON">
+								<img class="icon-heart2 dis-block trans-04 ab-t-l" src="images/icons/icon-heart-02.png"
+									alt="ICON">
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-sm-6 col-md-4 col-lg-3 p-b-35 isotope-item women">
+				<!-- Block2 -->
+				<div class="block2">
+					<div class="block2-pic hov-img0">
+						<img src="images/oats.jpg" alt="IMG-PRODUCT">
+
+						<a href="#"
+							class="block2-btn flex-c-m stext-103 cl2 size-102 bg0 bor2 hov-btn1 p-lr-15 trans-04 js-show-modal1">
+							Quick View
+						</a>
+					</div>
+
+					<div class="block2-txt flex-w flex-t p-t-14">
+						<div class="block2-txt-child1 flex-col-l ">
+							<a href="product-detail.html" class="stext-104 cl4 hov-cl1 trans-04 js-name-b2 p-b-6">
+								Square Neck Back
+							</a>
+
+							<span class="stext-105 cl3">
+								$29.64
+							</span>
+						</div>
+
+						<div class="block2-txt-child2 flex-r p-t-3">
+							<a href="#" class="btn-addwish-b2 dis-block pos-relative js-addwish-b2">
+								<img class="icon-heart1 dis-block trans-04" src="images/icons/icon-heart-01.png"
+									alt="ICON">
+								<img class="icon-heart2 dis-block trans-04 ab-t-l" src="images/icons/icon-heart-02.png"
+									alt="ICON">
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-sm-6 col-md-4 col-lg-3 p-b-35 isotope-item women">
+				<!-- Block2 -->
+				<div class="block2">
+					<div class="block2-pic hov-img0">
+						<img src="images/milk_powder.jpg" alt="IMG-PRODUCT">
+
+						<a href="#"
+							class="block2-btn flex-c-m stext-103 cl2 size-102 bg0 bor2 hov-btn1 p-lr-15 trans-04 js-show-modal1">
+							Quick View
+						</a>
+					</div>
+
+					<div class="block2-txt flex-w flex-t p-t-14">
+						<div class="block2-txt-child1 flex-col-l ">
+							<a href="product-detail.html" class="stext-104 cl4 hov-cl1 trans-04 js-name-b2 p-b-6">
+								Square Neck Back
+							</a>
+
+							<span class="stext-105 cl3">
+								$29.64
+							</span>
+						</div>
+
+						<div class="block2-txt-child2 flex-r p-t-3">
+							<a href="#" class="btn-addwish-b2 dis-block pos-relative js-addwish-b2">
+								<img class="icon-heart1 dis-block trans-04" src="images/icons/icon-heart-01.png"
+									alt="ICON">
+								<img class="icon-heart2 dis-block trans-04 ab-t-l" src="images/icons/icon-heart-02.png"
+									alt="ICON">
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-sm-6 col-md-4 col-lg-3 p-b-35 isotope-item women">
+				<!-- Block2 -->
+				<div class="block2">
+					<div class="block2-pic hov-img0">
+						<img src="images/eno.jpg" alt="IMG-PRODUCT">
+
+						<a href="#"
+							class="block2-btn flex-c-m stext-103 cl2 size-102 bg0 bor2 hov-btn1 p-lr-15 trans-04 js-show-modal1">
+							Quick View
+						</a>
+					</div>
+
+					<div class="block2-txt flex-w flex-t p-t-14">
+						<div class="block2-txt-child1 flex-col-l ">
+							<a href="product-detail.html" class="stext-104 cl4 hov-cl1 trans-04 js-name-b2 p-b-6">
+								Square Neck Back
+							</a>
+
+							<span class="stext-105 cl3">
+								$29.64
+							</span>
+						</div>
+
+						<div class="block2-txt-child2 flex-r p-t-3">
+							<a href="#" class="btn-addwish-b2 dis-block pos-relative js-addwish-b2">
+								<img class="icon-heart1 dis-block trans-04" src="images/icons/icon-heart-01.png"
+									alt="ICON">
+								<img class="icon-heart2 dis-block trans-04 ab-t-l" src="images/icons/icon-heart-02.png"
+									alt="ICON">
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-sm-6 col-md-4 col-lg-3 p-b-35 isotope-item women">
+				<!-- Block2 -->
+				<div class="block2">
+					<div class="block2-pic hov-img0">
+						<img src="images/salt.jpg" alt="IMG-PRODUCT">
+
+						<a href="#"
+							class="block2-btn flex-c-m stext-103 cl2 size-102 bg0 bor2 hov-btn1 p-lr-15 trans-04 js-show-modal1">
+							Quick View
+						</a>
+					</div>
+
+					<div class="block2-txt flex-w flex-t p-t-14">
+						<div class="block2-txt-child1 flex-col-l ">
+							<a href="product-detail.html" class="stext-104 cl4 hov-cl1 trans-04 js-name-b2 p-b-6">
+								Square Neck Back
+							</a>
+
+							<span class="stext-105 cl3">
+								$29.64
+							</span>
+						</div>
+
+						<div class="block2-txt-child2 flex-r p-t-3">
+							<a href="#" class="btn-addwish-b2 dis-block pos-relative js-addwish-b2">
+								<img class="icon-heart1 dis-block trans-04" src="images/icons/icon-heart-01.png"
+									alt="ICON">
+								<img class="icon-heart2 dis-block trans-04 ab-t-l" src="images/icons/icon-heart-02.png"
+									alt="ICON">
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-sm-6 col-md-4 col-lg-3 p-b-35 isotope-item women">
+				<!-- Block2 -->
+				<div class="block2">
+					<div class="block2-pic hov-img0">
+						<img src="images/saffron.jpg" alt="IMG-PRODUCT">
+
+						<a href="#"
+							class="block2-btn flex-c-m stext-103 cl2 size-102 bg0 bor2 hov-btn1 p-lr-15 trans-04 js-show-modal1">
+							Quick View
+						</a>
+					</div>
+
+					<div class="block2-txt flex-w flex-t p-t-14">
+						<div class="block2-txt-child1 flex-col-l ">
+							<a href="product-detail.html" class="stext-104 cl4 hov-cl1 trans-04 js-name-b2 p-b-6">
+								Square Neck Back
+							</a>
+
+							<span class="stext-105 cl3">
+								$29.64
+							</span>
+						</div>
+
+						<div class="block2-txt-child2 flex-r p-t-3">
+							<a href="#" class="btn-addwish-b2 dis-block pos-relative js-addwish-b2">
+								<img class="icon-heart1 dis-block trans-04" src="images/icons/icon-heart-01.png"
+									alt="ICON">
+								<img class="icon-heart2 dis-block trans-04 ab-t-l" src="images/icons/icon-heart-02.png"
+									alt="ICON">
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-sm-6 col-md-4 col-lg-3 p-b-35 isotope-item women">
+				<!-- Block2 -->
+				<div class="block2">
+					<div class="block2-pic hov-img0">
+						<img src="images/coconut.jpg" alt="IMG-PRODUCT">
+
+						<a href="#"
+							class="block2-btn flex-c-m stext-103 cl2 size-102 bg0 bor2 hov-btn1 p-lr-15 trans-04 js-show-modal1">
+							Quick View
+						</a>
+					</div>
+
+					<div class="block2-txt flex-w flex-t p-t-14">
+						<div class="block2-txt-child1 flex-col-l ">
+							<a href="product-detail.html" class="stext-104 cl4 hov-cl1 trans-04 js-name-b2 p-b-6">
+								Square Neck Back
+							</a>
+
+							<span class="stext-105 cl3">
+								$29.64
+							</span>
+						</div>
+
+						<div class="block2-txt-child2 flex-r p-t-3">
+							<a href="#" class="btn-addwish-b2 dis-block pos-relative js-addwish-b2">
+								<img class="icon-heart1 dis-block trans-04" src="images/icons/icon-heart-01.png"
+									alt="ICON">
+								<img class="icon-heart2 dis-block trans-04 ab-t-l" src="images/icons/icon-heart-02.png"
+									alt="ICON">
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-sm-6 col-md-4 col-lg-3 p-b-35 isotope-item women">
+				<!-- Block2 -->
+				<div class="block2">
+					<div class="block2-pic hov-img0">
+						<img src="images/jaggery.jpg" alt="IMG-PRODUCT">
+
+						<a href="#"
+							class="block2-btn flex-c-m stext-103 cl2 size-102 bg0 bor2 hov-btn1 p-lr-15 trans-04 js-show-modal1">
+							Quick View
+						</a>
+					</div>
+
+					<div class="block2-txt flex-w flex-t p-t-14">
+						<div class="block2-txt-child1 flex-col-l ">
+							<a href="product-detail.html" class="stext-104 cl4 hov-cl1 trans-04 js-name-b2 p-b-6">
+								Square Neck Back
+							</a>
+
+							<span class="stext-105 cl3">
+								$29.64
+							</span>
+						</div>
+
+						<div class="block2-txt-child2 flex-r p-t-3">
+							<a href="#" class="btn-addwish-b2 dis-block pos-relative js-addwish-b2">
+								<img class="icon-heart1 dis-block trans-04" src="images/icons/icon-heart-01.png"
+									alt="ICON">
+								<img class="icon-heart2 dis-block trans-04 ab-t-l" src="images/icons/icon-heart-02.png"
+									alt="ICON">
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-sm-6 col-md-4 col-lg-3 p-b-35 isotope-item women">
+				<!-- Block2 -->
+				<div class="block2">
+					<div class="block2-pic hov-img0">
+						<img src="images/pickle.jpg" alt="IMG-PRODUCT">
+
+						<a href="#"
+							class="block2-btn flex-c-m stext-103 cl2 size-102 bg0 bor2 hov-btn1 p-lr-15 trans-04 js-show-modal1">
+							Quick View
+						</a>
+					</div>
+
+					<div class="block2-txt flex-w flex-t p-t-14">
+						<div class="block2-txt-child1 flex-col-l ">
+							<a href="product-detail.html" class="stext-104 cl4 hov-cl1 trans-04 js-name-b2 p-b-6">
+								Square Neck Back
+							</a>
+
+							<span class="stext-105 cl3">
+								$29.64
+							</span>
+						</div>
+
+						<div class="block2-txt-child2 flex-r p-t-3">
+							<a href="#" class="btn-addwish-b2 dis-block pos-relative js-addwish-b2">
+								<img class="icon-heart1 dis-block trans-04" src="images/icons/icon-heart-01.png"
+									alt="ICON">
+								<img class="icon-heart2 dis-block trans-04 ab-t-l" src="images/icons/icon-heart-02.png"
+									alt="ICON">
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-sm-6 col-md-4 col-lg-3 p-b-35 isotope-item women">
+				<!-- Block2 -->
+				<div class="block2">
+					<div class="block2-pic hov-img0">
+						<img src="images/supari.jpg" alt="IMG-PRODUCT">
+
+						<a href="#"
+							class="block2-btn flex-c-m stext-103 cl2 size-102 bg0 bor2 hov-btn1 p-lr-15 trans-04 js-show-modal1">
+							Quick View
+						</a>
+					</div>
+
+					<div class="block2-txt flex-w flex-t p-t-14">
+						<div class="block2-txt-child1 flex-col-l ">
+							<a href="product-detail.html" class="stext-104 cl4 hov-cl1 trans-04 js-name-b2 p-b-6">
+								Square Neck Back
+							</a>
+
+							<span class="stext-105 cl3">
+								$29.64
+							</span>
+						</div>
+
+						<div class="block2-txt-child2 flex-r p-t-3">
+							<a href="#" class="btn-addwish-b2 dis-block pos-relative js-addwish-b2">
+								<img class="icon-heart1 dis-block trans-04" src="images/icons/icon-heart-01.png"
+									alt="ICON">
+								<img class="icon-heart2 dis-block trans-04 ab-t-l" src="images/icons/icon-heart-02.png"
+									alt="ICON">
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-sm-6 col-md-4 col-lg-3 p-b-35 isotope-item women">
+				<!-- Block2 -->
+				<div class="block2">
+					<div class="block2-pic hov-img0">
+						<img src="images/black_paper.jpg" alt="IMG-PRODUCT">
+
+						<a href="#"
+							class="block2-btn flex-c-m stext-103 cl2 size-102 bg0 bor2 hov-btn1 p-lr-15 trans-04 js-show-modal1">
+							Quick View
+						</a>
+					</div>
+
+					<div class="block2-txt flex-w flex-t p-t-14">
+						<div class="block2-txt-child1 flex-col-l ">
+							<a href="product-detail.html" class="stext-104 cl4 hov-cl1 trans-04 js-name-b2 p-b-6">
+								Square Neck Back
+							</a>
+
+							<span class="stext-105 cl3">
+								$29.64
+							</span>
+						</div>
+
+						<div class="block2-txt-child2 flex-r p-t-3">
+							<a href="#" class="btn-addwish-b2 dis-block pos-relative js-addwish-b2">
+								<img class="icon-heart1 dis-block trans-04" src="images/icons/icon-heart-01.png"
+									alt="ICON">
+								<img class="icon-heart2 dis-block trans-04 ab-t-l" src="images/icons/icon-heart-02.png"
+									alt="ICON">
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-sm-6 col-md-4 col-lg-3 p-b-35 isotope-item women">
+				<!-- Block2 -->
+				<div class="block2">
+					<div class="block2-pic hov-img0">
+						<img src="images/cardamom.jpg" alt="IMG-PRODUCT">
+
+						<a href="#"
+							class="block2-btn flex-c-m stext-103 cl2 size-102 bg0 bor2 hov-btn1 p-lr-15 trans-04 js-show-modal1">
+							Quick View
+						</a>
+					</div>
+
+					<div class="block2-txt flex-w flex-t p-t-14">
+						<div class="block2-txt-child1 flex-col-l ">
+							<a href="product-detail.html" class="stext-104 cl4 hov-cl1 trans-04 js-name-b2 p-b-6">
+								Square Neck Back
+							</a>
+
+							<span class="stext-105 cl3">
+								$29.64
+							</span>
+						</div>
+
+						<div class="block2-txt-child2 flex-r p-t-3">
+							<a href="#" class="btn-addwish-b2 dis-block pos-relative js-addwish-b2">
+								<img class="icon-heart1 dis-block trans-04" src="images/icons/icon-heart-01.png"
+									alt="ICON">
+								<img class="icon-heart2 dis-block trans-04 ab-t-l" src="images/icons/icon-heart-02.png"
+									alt="ICON">
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-sm-6 col-md-4 col-lg-3 p-b-35 isotope-item women">
+				<!-- Block2 -->
+				<div class="block2">
+					<div class="block2-pic hov-img0">
+						<img src="images/star_anise.jpg" alt="IMG-PRODUCT">
+
+						<a href="#"
+							class="block2-btn flex-c-m stext-103 cl2 size-102 bg0 bor2 hov-btn1 p-lr-15 trans-04 js-show-modal1">
+							Quick View
+						</a>
+					</div>
+
+					<div class="block2-txt flex-w flex-t p-t-14">
+						<div class="block2-txt-child1 flex-col-l ">
+							<a href="product-detail.html" class="stext-104 cl4 hov-cl1 trans-04 js-name-b2 p-b-6">
+								Square Neck Back
+							</a>
+
+							<span class="stext-105 cl3">
+								$29.64
+							</span>
+						</div>
+
+						<div class="block2-txt-child2 flex-r p-t-3">
+							<a href="#" class="btn-addwish-b2 dis-block pos-relative js-addwish-b2">
+								<img class="icon-heart1 dis-block trans-04" src="images/icons/icon-heart-01.png"
+									alt="ICON">
+								<img class="icon-heart2 dis-block trans-04 ab-t-l" src="images/icons/icon-heart-02.png"
+									alt="ICON">
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-sm-6 col-md-4 col-lg-3 p-b-35 isotope-item women">
+				<!-- Block2 -->
+				<div class="block2">
+					<div class="block2-pic hov-img0">
+						<img src="images/clove.jpg" alt="IMG-PRODUCT">
+
+						<a href="#"
+							class="block2-btn flex-c-m stext-103 cl2 size-102 bg0 bor2 hov-btn1 p-lr-15 trans-04 js-show-modal1">
+							Quick View
+						</a>
+					</div>
+
+					<div class="block2-txt flex-w flex-t p-t-14">
+						<div class="block2-txt-child1 flex-col-l ">
+							<a href="product-detail.html" class="stext-104 cl4 hov-cl1 trans-04 js-name-b2 p-b-6">
+								Square Neck Back
+							</a>
+
+							<span class="stext-105 cl3">
+								$29.64
+							</span>
+						</div>
+
+						<div class="block2-txt-child2 flex-r p-t-3">
+							<a href="#" class="btn-addwish-b2 dis-block pos-relative js-addwish-b2">
+								<img class="icon-heart1 dis-block trans-04" src="images/icons/icon-heart-01.png"
+									alt="ICON">
+								<img class="icon-heart2 dis-block trans-04 ab-t-l" src="images/icons/icon-heart-02.png"
+									alt="ICON">
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-sm-6 col-md-4 col-lg-3 p-b-35 isotope-item women">
+				<!-- Block2 -->
+				<div class="block2">
+					<div class="block2-pic hov-img0">
+						<img src="images/nutmeg.jpg" alt="IMG-PRODUCT">
+
+						<a href="#"
+							class="block2-btn flex-c-m stext-103 cl2 size-102 bg0 bor2 hov-btn1 p-lr-15 trans-04 js-show-modal1">
+							Quick View
+						</a>
+					</div>
+
+					<div class="block2-txt flex-w flex-t p-t-14">
+						<div class="block2-txt-child1 flex-col-l ">
+							<a href="product-detail.html" class="stext-104 cl4 hov-cl1 trans-04 js-name-b2 p-b-6">
+								Square Neck Back
+							</a>
+
+							<span class="stext-105 cl3">
+								$29.64
+							</span>
+						</div>
+
+						<div class="block2-txt-child2 flex-r p-t-3">
+							<a href="#" class="btn-addwish-b2 dis-block pos-relative js-addwish-b2">
+								<img class="icon-heart1 dis-block trans-04" src="images/icons/icon-heart-01.png"
+									alt="ICON">
+								<img class="icon-heart2 dis-block trans-04 ab-t-l" src="images/icons/icon-heart-02.png"
+									alt="ICON">
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-sm-6 col-md-4 col-lg-3 p-b-35 isotope-item women">
+				<!-- Block2 -->
+				<div class="block2">
+					<div class="block2-pic hov-img0">
+						<img src="images/cinnamon.jpg" alt="IMG-PRODUCT">
+
+						<a href="#"
+							class="block2-btn flex-c-m stext-103 cl2 size-102 bg0 bor2 hov-btn1 p-lr-15 trans-04 js-show-modal1">
+							Quick View
+						</a>
+					</div>
+
+					<div class="block2-txt flex-w flex-t p-t-14">
+						<div class="block2-txt-child1 flex-col-l ">
+							<a href="product-detail.html" class="stext-104 cl4 hov-cl1 trans-04 js-name-b2 p-b-6">
+								Square Neck Back
+							</a>
+
+							<span class="stext-105 cl3">
+								$29.64
+							</span>
+						</div>
+
+						<div class="block2-txt-child2 flex-r p-t-3">
+							<a href="#" class="btn-addwish-b2 dis-block pos-relative js-addwish-b2">
+								<img class="icon-heart1 dis-block trans-04" src="images/icons/icon-heart-01.png"
+									alt="ICON">
+								<img class="icon-heart2 dis-block trans-04 ab-t-l" src="images/icons/icon-heart-02.png"
+									alt="ICON">
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-sm-6 col-md-4 col-lg-3 p-b-35 isotope-item women">
+				<!-- Block2 -->
+				<div class="block2">
+					<div class="block2-pic hov-img0">
+						<img src="images/bay_leaves.jpg" alt="IMG-PRODUCT">
+
+						<a href="#"
+							class="block2-btn flex-c-m stext-103 cl2 size-102 bg0 bor2 hov-btn1 p-lr-15 trans-04 js-show-modal1">
+							Quick View
+						</a>
+					</div>
+
+					<div class="block2-txt flex-w flex-t p-t-14">
+						<div class="block2-txt-child1 flex-col-l ">
+							<a href="product-detail.html" class="stext-104 cl4 hov-cl1 trans-04 js-name-b2 p-b-6">
+								Square Neck Back
+							</a>
+
+							<span class="stext-105 cl3">
+								$29.64
+							</span>
+						</div>
+
+						<div class="block2-txt-child2 flex-r p-t-3">
+							<a href="#" class="btn-addwish-b2 dis-block pos-relative js-addwish-b2">
+								<img class="icon-heart1 dis-block trans-04" src="images/icons/icon-heart-01.png"
+									alt="ICON">
+								<img class="icon-heart2 dis-block trans-04 ab-t-l" src="images/icons/icon-heart-02.png"
+									alt="ICON">
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
 		</div>
 
 		<!-- Load more -->
