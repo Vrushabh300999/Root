@@ -81,7 +81,7 @@ if (!isset($_SESSION['id'])) {
 
           <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
             <li class="dropdown-header">
-              <h6>Kevin Anderson</h6>
+              <h6><?php echo $_SESSION['adminname']; ?></h6>
             </li>
             <li>
               <hr class="dropdown-divider">
