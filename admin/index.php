@@ -2,8 +2,7 @@
 include("../config/connection.php");
 
 // Admin Login
-
-if (!empty($_SESSION['id'])) {
+if (isset($_SESSION['id'])) {
   header("location:dashboard.php");
   exit;
 }
@@ -86,10 +85,10 @@ if (isset($_POST['loginbutton'])) {
                     <p class="text-center small">Enter your email & password to login</p>
                   </div>
 
-                  <form class="row g-3 needs-validation" novalidate action="" method="POST">
+                  <form class="row g-3 needs-validation" action="" method="POST">
 
                     <div class="col-12">
-                      <label for="youremail" class="form-label">email</label>
+                      <label for="youremail" class="form-label">Email</label>
                       <div class="input-group has-validation">
                         <input type="text" name="email" class="form-control" id="youremail" required>
                         <div class="invalid-feedback">Please enter your email.</div>

@@ -1,12 +1,11 @@
 <?php
 include("./../config/connection.php");
-$sql = "SELECT tbl_products.*, tbl_category.name as category_name FROM tbl_products ";
-$sql .= "INNER JOIN tbl_category ON tbl_products.category_id = tbl_category.id ";
+$sql = "SELECT * FROM tbl_category ";
 $sql .= "ORDER BY id DESC";
 $statement = $db->prepare($sql);
 $statement->execute();
 
-$title = "Products";
+$title = "Manage Categories";
 include("public/header.php");
 include("public/sidebar.php");
 ?>
@@ -18,7 +17,7 @@ include("public/sidebar.php");
     <nav>
       <ol class="breadcrumb">
         <li class="breadcrumb-item"><a href="index.php">Home</a></li>
-        <li class="breadcrumb-item active">Products</li>
+        <li class="breadcrumb-item active">Categories</li>
       </ol>
     </nav>
   </div><!-- End Page Title -->
@@ -29,10 +28,10 @@ include("public/sidebar.php");
 
         <div class="card">
           <div class="card-body">
-            <h5 class="card-title">Products</h5>
+            <h5 class="card-title">Categories</h5>
             <p>
-              <a href="add_product.php">
-                <i class="bi bi-archive"></i>&nbsp;<span>Add Product</span>
+              <a href="add_category.php">
+                <i class="bi bi-archive"></i>&nbsp;<span>Add Category</span>
               </a>
             </p>
 
@@ -42,8 +41,6 @@ include("public/sidebar.php");
                 <tr>
                   <th width="25%">Name</th>
                   <th width="10%">Image</th>
-                  <th width="10%">Price</th>
-                  <th width="20%">Category</th>
                   <th width="20%">Date</th>
                   <th width="10%">Action</th>
                 </tr>
@@ -56,12 +53,10 @@ include("public/sidebar.php");
                     <tr>
                       <td><?php echo $data->name; ?></td>
                       <td><img src="images/<?php echo $data->image; ?>" width="100%" alt="" srcset=""></td>
-                      <td><?php echo $data->price; ?></td>
-                      <td><?php echo $data->category_name; ?></td>
                       <td><?php echo date('jS M Y', strtotime($data->created_date)); ?></td>
                       <td>
-                        <a href="edit_product.php?product_id=<?php echo $data->id; ?>">Edit</a>
-                        <a href="delete_product.php?product_id=<?php echo $data->id; ?>"
+                        <a href="edit_category.php?category_id=<?php echo $data->id; ?>">Edit</a>
+                        <a href="delete_category.php?category_id=<?php echo $data->id; ?>"
                           onclick="return confirm('Are you sure you want to delete?')">Delete</a>
                       </td>
                     </tr>

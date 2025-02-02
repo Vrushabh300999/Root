@@ -1,4 +1,7 @@
 <?php
+include("./../config/connection.php");
+
+$title = "Dashboard";
 include("public/header.php");
 include("public/sidebar.php");
 ?>

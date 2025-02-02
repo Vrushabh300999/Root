@@ -1,4 +1,5 @@
 <?php
+$title = "Profile";
 include("public/header.php");
 include("public/sidebar.php");
 ?>
