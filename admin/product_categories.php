@@ -52,7 +52,7 @@ include("public/sidebar.php");
                     ?>
                     <tr>
                       <td><?php echo $data->name; ?></td>
-                      <td><img src="images/<?php echo $data->image; ?>" width="100%" alt="" srcset=""></td>
+                      <td><img src="../images/<?php echo $data->image; ?>" width="100%" alt="" srcset=""></td>
                       <td><?php echo date('jS M Y', strtotime($data->created_date)); ?></td>
                       <td>
                         <a href="edit_category.php?category_id=<?php echo $data->id; ?>">Edit</a>

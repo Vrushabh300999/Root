@@ -61,7 +61,6 @@ if (!isset($_SESSION['id'])) {
 
     <nav class="header-nav ms-auto">
       <ul class="d-flex align-items-center">
-
         <li class="nav-item d-block d-lg-none">
           <a class="nav-link nav-icon search-bar-toggle " href="#">
             <i class="bi bi-search"></i>
@@ -69,9 +68,9 @@ if (!isset($_SESSION['id'])) {
         </li><!-- End Search Icon-->
 
         <li class="nav-item dropdown pe-3">
-
           <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
-            <img src="assets/img/profile-img.jpg" alt="Profile" class="rounded-circle">
+            <img src="../images/<?php echo isset($_SESSION['image']) ? $_SESSION['image'] : ""; ?>" width="40px"
+              height="40px" alt="Profile" class="rounded-circle">
             <span class="d-none d-md-block dropdown-toggle ps-2">
               <?php echo $_SESSION['adminname']; ?>
             </span>
@@ -84,9 +83,9 @@ if (!isset($_SESSION['id'])) {
             <li>
               <hr class="dropdown-divider">
             </li>
-
             <li>
-              <a class="dropdown-item d-flex align-items-center" href="users-profile.php">
+              <a class="dropdown-item d-flex align-items-center"
+                href="users-profile.php?id=<?php echo $_SESSION['id']; ?>">
                 <i class="bi bi-person"></i>
                 <span>My Profile</span>
               </a>

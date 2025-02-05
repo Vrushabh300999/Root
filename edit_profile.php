@@ -102,7 +102,6 @@ include("public/header.php");
                     </div>
                     <label for="exampleFormControlInput1" class="form-label">Gender</label>
                     <div class="form-check mb-3 ml-4">
-
                         <input class="form-check-input" type="radio" name="gender" id="exampleRadios1" value="Male"
                             <?php
                             if ($gender == "Male") {

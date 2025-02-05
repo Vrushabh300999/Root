@@ -14,25 +14,25 @@ if (isset($_POST['submit'])) {
   $description = strip_tags($_POST['description']);
 
   if ($_FILES['image']['name']) {
-    $filename = imguplode("images/", $_FILES['image']);
+    $filename = imguplode("../images/", $_FILES['image']);
   } else {
     $filename = $_POST['image'];
   }
 
   // if (!empty($filename)) {
-    $sql = "UPDATE tbl_category SET 
+  $sql = "UPDATE tbl_category SET 
             name='$name',
             image='$filename',
             description='$description'
             WHERE id='$category_id'";
-    $result = $db->prepare($sql);
-    $result->execute();
-    $total = $result->rowcount();
-    if ($total > 0) {
-      echo '<script>alert("Data successfully Updated");</script>';
-      header("location:product_categories.php");
-      exit;
-    }
+  $result = $db->prepare($sql);
+  $result->execute();
+  $total = $result->rowcount();
+  if ($total > 0) {
+    echo '<script>alert("Data successfully Updated");</script>';
+    header("location:product_categories.php");
+    exit;
+  }
   // }
 }
 
@@ -101,7 +101,7 @@ include("public/sidebar.php");
                   <input type="hidden" name="image" id="image" value="<?php echo $image; ?>" accept="image/*" />
                   <?php
                   if ($image) {
-                    echo "<br/><img height='100' src='" . "images/" . $image . "'/>";
+                    echo "<br/><img height='100' src='" . "../images/" . $image . "'/>";
                   }
                   ?>
                 </div>

@@ -16,7 +16,7 @@ if (isset($_POST['submit'])) {
   $price = strip_tags($_POST['price']);
 
   if ($_FILES['image']['name']) {
-    $filename = imguplode("images/", $_FILES['image']);
+    $filename = imguplode("../images/", $_FILES['image']);
   } else {
     $filename = $_POST['image'];
   }
@@ -148,7 +148,7 @@ include("public/sidebar.php");
                   <input type="hidden" name="image" id="image" value="<?php echo $image; ?>" accept="image/*" />
                   <?php
                   if ($image) {
-                    echo "<br/><img height='100' src='" . "images/" . $image . "'/>";
+                    echo "<br/><img height='100' src='" . "../images/" . $image . "'/>";
                   }
                   ?>
                 </div>

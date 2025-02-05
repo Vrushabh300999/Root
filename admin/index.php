@@ -21,6 +21,7 @@ if (isset($_POST['loginbutton'])) {
     $_SESSION['adminname'] = $admindata->name;
     $_SESSION['id'] = $admindata->id;
     $_SESSION['email'] = $admindata->email;
+    $_SESSION['image'] = $admindata->images;
     header("location:dashboard.php");
   }
 }
