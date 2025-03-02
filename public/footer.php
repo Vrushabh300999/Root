@@ -87,7 +87,7 @@
 					Newsletter
 				</h4>
 
-				<form action="newsletter_mail.php" method="get">
+				<form action="newsletter_mail.php" method="post">
 					<div class="wrap-input1 w-full p-b-4">
 						<input class="input1 bg-none plh1 stext-107 cl7" type="text" name="email"
 							placeholder="email@example.com">

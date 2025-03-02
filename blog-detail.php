@@ -1,5 +1,6 @@
 <?php
 $title = "Blog Details";
+include("config/connection.php");
 include("public/header.php");
 ?>
 

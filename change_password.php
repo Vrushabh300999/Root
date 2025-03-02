@@ -44,6 +44,7 @@ if (isset($_POST['change'])) {
     }
 }
 $title = "Change Password";
+include("config/connection.php");
 include("public/header.php");
 ?>
 <section class="bg0 p-t-55 p-b-116">

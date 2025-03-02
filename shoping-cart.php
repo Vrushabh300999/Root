@@ -1,5 +1,6 @@
 <?php
 $title = "Cart";
+include("config/connection.php");
 include("public/header.php");
 ?>
 

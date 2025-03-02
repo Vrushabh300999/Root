@@ -1,5 +1,6 @@
 <?php
 $title = "About";
+include("config/connection.php");
 include("public/header.php");
 ?>
 

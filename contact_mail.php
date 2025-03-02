@@ -1,5 +1,6 @@
 <?php
 $email = $_REQUEST['email'];
+$message = $_REQUEST['msg'];
 
 $to = "vrushabhpatel464@gmail.com";
 $cc = "";
@@ -7,9 +8,11 @@ $cc = "";
 // $cc = "vrushabhpatel363@gmail.com";
 
 // the message
-$msg = "Newsletter Subscription Email: " . $email . "\n";
-// $msg = $msg . "Thank you for subscribing to our newsletter.";
-// $msg = $msg . "You will receive all the latest updates and offers on your email.";
+$msg = "Email: " . $email . "\n";
+$msg = $msg . "Message: " . $message;
+// $msg = $msg . "\n";
+// $msg = $msg . "Thank you for contacting us.";
+// $msg = $msg . "We will get back to you as soon as possible.";
 // $msg = $msg . "Stay tuned for more updates.";
 // $msg = $msg . "Thank you.";
 // $msg = $msg . "Regards,";
@@ -18,7 +21,7 @@ $msg = "Newsletter Subscription Email: " . $email . "\n";
 // use wordwrap() if lines are longer than 70 characters
 $msg = wordwrap($msg, 70);
 
-$subject = "Newsletter Subscription";
+$subject = "Conatct Us";
 
 // send email
 //$flag = mail("vrushabhpatel464@gmail.com", "Test Cron", $msg);
