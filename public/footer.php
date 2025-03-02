@@ -8,65 +8,56 @@
 				</h4>
 
 				<ul>
-					<li class="p-b-10">
-						<a href="#" class="stext-107 cl7 hov-cl1 trans-04">
-							Women
-						</a>
-					</li>
-
-					<li class="p-b-10">
-						<a href="#" class="stext-107 cl7 hov-cl1 trans-04">
-							Men
-						</a>
-					</li>
-
-					<li class="p-b-10">
-						<a href="#" class="stext-107 cl7 hov-cl1 trans-04">
-							Shoes
-						</a>
-					</li>
-
-					<li class="p-b-10">
-						<a href="#" class="stext-107 cl7 hov-cl1 trans-04">
-							Watches
-						</a>
-					</li>
+					<?php
+					$sql = "SELECT * FROM tbl_category ";
+					$sql .= "ORDER BY id ASC";
+					$statement = $db->prepare($sql);
+					$statement->execute();
+					if ($statement->rowCount() > 0) {
+						while ($data = $statement->fetch(PDO::FETCH_OBJ)) {
+							?>
+							<li class="p-b-10">
+								<a href="product-category.php?category_id=<?php echo $data->id; ?>"
+									class="stext-107 cl7 hov-cl1 trans-04">
+									<?php echo $data->name; ?>
+								</a>
+							</li>
+							<?php
+						}
+					}
+					?>
 				</ul>
 			</div>
 
-			<div class="col-sm-6 col-lg-3 p-b-50">
+			<div class="col-sm-6 col-lg-2 p-b-50">
 				<h4 class="stext-301 cl0 p-b-30">
-					Help
+					Links
 				</h4>
-
 				<ul>
 					<li class="p-b-10">
-						<a href="#" class="stext-107 cl7 hov-cl1 trans-04">
-							Track Order
+						<a href="index.php" class="stext-107 cl7 hov-cl1 trans-04">
+							Home
 						</a>
 					</li>
-
 					<li class="p-b-10">
-						<a href="#" class="stext-107 cl7 hov-cl1 trans-04">
-							Returns
+						<a href="product.php" class="stext-107 cl7 hov-cl1 trans-04">
+							Shop
 						</a>
 					</li>
-
 					<li class="p-b-10">
-						<a href="#" class="stext-107 cl7 hov-cl1 trans-04">
-							Shipping
+						<a href="about.php" class="stext-107 cl7 hov-cl1 trans-04">
+							About
 						</a>
 					</li>
-
 					<li class="p-b-10">
-						<a href="#" class="stext-107 cl7 hov-cl1 trans-04">
-							FAQs
+						<a href="contact.php" class="stext-107 cl7 hov-cl1 trans-04">
+							Contact
 						</a>
 					</li>
 				</ul>
 			</div>
 
-			<div class="col-sm-6 col-lg-3 p-b-50">
+			<div class="col-sm-6 col-lg-4 p-b-50">
 				<h4 class="stext-301 cl0 p-b-30">
 					GET IN TOUCH
 				</h4>
@@ -76,7 +67,7 @@
 					(+1) 96 716 6879
 				</p>
 
-				<div class="p-t-27">
+				<!-- <div class="p-t-27">
 					<a href="#" class="fs-18 cl7 hov-cl1 trans-04 m-r-16">
 						<i class="fa fa-facebook"></i>
 					</a>
@@ -88,7 +79,7 @@
 					<a href="#" class="fs-18 cl7 hov-cl1 trans-04 m-r-16">
 						<i class="fa fa-pinterest-p"></i>
 					</a>
-				</div>
+				</div> -->
 			</div>
 
 			<div class="col-sm-6 col-lg-3 p-b-50">
@@ -96,7 +87,7 @@
 					Newsletter
 				</h4>
 
-				<form>
+				<form action="newsletter_mail.php" method="get">
 					<div class="wrap-input1 w-full p-b-4">
 						<input class="input1 bg-none plh1 stext-107 cl7" type="text" name="email"
 							placeholder="email@example.com">
@@ -113,7 +104,7 @@
 		</div>
 
 		<div class="p-t-40">
-			<div class="flex-c-m flex-w p-b-18">
+			<!-- <div class="flex-c-m flex-w p-b-18">
 				<a href="#" class="m-all-1">
 					<img src="images/icons/icon-pay-01.png" alt="ICON-PAY">
 				</a>
@@ -133,17 +124,11 @@
 				<a href="#" class="m-all-1">
 					<img src="images/icons/icon-pay-05.png" alt="ICON-PAY">
 				</a>
-			</div>
+			</div> -->
 
 			<p class="stext-107 cl6 txt-center">
-				<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
 				Copyright &copy;
-				<script>document.write(new Date().getFullYear());</script> All rights reserved | Made with <i
-					class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com"
-					target="_blank">Colorlib</a> &amp; distributed by <a href="https://themewagon.com"
-					target="_blank">ThemeWagon</a>
-				<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-
+				<script>document.write(new Date().getFullYear());</script> All rights reserved
 			</p>
 		</div>
 	</div>
