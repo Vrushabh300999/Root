@@ -78,7 +78,7 @@ include("public/header.php");
 											<?php echo $data->name; ?>
 										</a>
 										<span class="stext-105 cl3">
-											$<?php echo $data->price; ?>
+											₹<?php echo $data->price; ?>
 										</span>
 									</div>
 									<div class="block2-txt-child2 flex-r p-t-3">

@@ -17,7 +17,7 @@ if (!isset($_SESSION['id'])) {
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
+  <link href="../images/icons/favicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
@@ -46,8 +46,9 @@ if (!isset($_SESSION['id'])) {
 
     <div class="d-flex align-items-center justify-content-between">
       <a href="index.php" class="logo d-flex align-items-center">
-        <img src="assets/img/logo.png" alt="">
-        <span class="d-none d-lg-block">NiceAdmin</span>
+        <img src="../images/icons/mc_logo.png" alt="" style="max-height: 56px;">
+        <!-- <img src="assets/img/logo.png" alt="">
+        <span class="d-none d-lg-block">NiceAdmin</span> -->
       </a>
       <i class="bi bi-list toggle-sidebar-btn"></i>
     </div><!-- End Logo -->
