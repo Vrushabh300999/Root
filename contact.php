@@ -5,8 +5,7 @@ include("public/header.php");
 ?>
 
 <!-- Title page -->
-<section class="bg-img1 txt-center p-lr-15 p-tb-92"
-	style="background-image: url('images/banner.jpg');">
+<section class="bg-img1 txt-center p-lr-15 p-tb-150" style="background-image: url('images/banner_7_1739367253.jpeg');">
 	<h2 class="ltext-105 cl0 txt-center">
 		Contact
 	</h2>
@@ -41,14 +40,15 @@ include("public/header.php");
 					<span class="fs-18 cl5 txt-center size-211">
 						<span class="lnr lnr-map-marker"></span>
 					</span>
-
 					<div class="size-212 p-t-2">
 						<span class="mtext-110 cl2">
 							Address
 						</span>
-
 						<p class="stext-115 cl6 size-213 p-t-18">
-							Coza Store Center 8th floor, 379 Hudson St, New York, NY 10018 US
+							<a
+								href="https://www.google.com/maps/place/MC+Brother/@23.6049844,72.3902888,20.5z/data=!4m6!3m5!1s0x395c439e88b59605:0xafd70ecff94b4d5d!8m2!3d23.6050487!4d72.3904921!16s%2Fg%2F11m64ybpvr?entry=tts&g_ep=EgoyMDI1MDMwNC4wIPu8ASoASAFQAw%3D%3D">
+								17/18, Mahatma Gandhi Shopping Center, Rajmahal Road, Mahesana, Gujarat, India
+							</a>
 						</p>
 					</div>
 				</div>
@@ -61,7 +61,7 @@ include("public/header.php");
 							Lets Talk
 						</span>
 						<p class="stext-115 cl1 size-213 p-t-18">
-							+1 800 1236879
+							<a href="tel:+918264434965">+91 82644 34965</a>
 						</p>
 					</div>
 				</div>
@@ -74,7 +74,7 @@ include("public/header.php");
 							Sale Support
 						</span>
 						<p class="stext-115 cl1 size-213 p-t-18">
-							contact@example.com
+							<a href="mailto:chintan73210@gmail.com">chintan73210@gmail.com</a>
 						</p>
 					</div>
 				</div>
@@ -89,7 +89,7 @@ include("public/header.php");
 	<div class="container">
 		<div class="map">
 			<iframe
-				src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d228.49930906449669!2d72.39052408309999!3d23.60472941656823!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1740912057208!5m2!1sen!2sin"
+				src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d323.14619338535516!2d72.39028879459502!3d23.60498442082901!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395c439e88b59605%3A0xafd70ecff94b4d5d!2sMC%20Brother!5e0!3m2!1sen!2sin!4v1741452491444!5m2!1sen!2sin"
 				width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
 				referrerpolicy="no-referrer-when-downgrade"></iframe>
 		</div>

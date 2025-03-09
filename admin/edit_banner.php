@@ -82,7 +82,7 @@ include("public/sidebar.php");
               <div class="col-md-12">
                 <div class="form-floating">
                   <input type="text" name="name" class="form-control" id="floatingName" placeholder="Banner Name"
-                    value="<?php echo $name; ?>" required>
+                    value="<?php echo $name; ?>">
                   <label for="floatingName">Banner Name</label>
                 </div>
               </div>

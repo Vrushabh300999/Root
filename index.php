@@ -6,7 +6,7 @@ include("public/header.php");
 ?>
 
 <!-- Slider -->
-<section class="section-slide">
+<section class="section-slide container-menu-desktop">
 	<div class="wrap-slick1">
 		<div class="slick1">
 			<?php
@@ -17,8 +17,9 @@ include("public/header.php");
 			if ($statement->rowCount() > 0) {
 				while ($data = $statement->fetch(PDO::FETCH_OBJ)) {
 					?>
-					<div class="item-slick1" style="background-image: url('images/<?php echo $data->image; ?>');">
-						<div class="container h-full">
+					<div class="item-slick1 h-100">
+						<img src="images/<?php echo $data->image; ?>" alt="IMG-BANNER" style="width: 100%;">
+						<!-- <div class="container h-full">
 							<div class="flex-col-l-m h-full p-t-100 p-b-30 respon5">
 								<div class="layer-slick1 animated visible-false" data-appear="fadeInDown" data-delay="0">
 									<span class="ltext-101 cl2 respon2">
@@ -31,7 +32,7 @@ include("public/header.php");
 									</h2>
 								</div>
 							</div>
-						</div>
+						</div> -->
 					</div>
 					<?php
 				}
@@ -46,8 +47,8 @@ include("public/header.php");
 <div class="sec-banner bg0 p-t-80 p-b-50">
 	<div class="container">
 		<!-- Slide2 -->
-		<div class="wrap-slick2">
-			<div class="slick2">
+		<div class="wrap-slick4">
+			<div class="slick4">
 				<?php
 				$sql = "SELECT * FROM tbl_category ";
 				$sql .= "ORDER BY id ASC";
@@ -56,7 +57,7 @@ include("public/header.php");
 				if ($statement->rowCount() > 0) {
 					while ($data = $statement->fetch(PDO::FETCH_OBJ)) {
 						?>
-						<div class="item-slick2 p-l-15 p-r-15 p-t-15 p-b-15">
+						<div class="item-slick4 p-l-15 p-r-15 p-t-15 p-b-15">
 							<!-- Block2 -->
 							<div class="block1 wrap-pic-w">
 								<img src="images/<?php echo $data->image; ?>" alt="IMG-BANNER">
