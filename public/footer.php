@@ -315,6 +315,8 @@
 <script src="vendor/bootstrap/js/popper.js"></script>
 <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
 <!--===============================================================================================-->
+<script src="js/function.js"></script>
+<!--===============================================================================================-->
 <script src="vendor/select2/select2.min.js"></script>
 <script>
 	$(".js-select2").each(function () {
@@ -354,39 +356,39 @@
 <!--===============================================================================================-->
 <script src="vendor/sweetalert/sweetalert.min.js"></script>
 <script>
-	$('.js-addwish-b2').on('click', function (e) {
-		e.preventDefault();
-	});
+	// $('.js-addwish-b2').on('click', function (e) {
+	// 	e.preventDefault();
+	// });
 
-	$('.js-addwish-b2').each(function () {
-		var nameProduct = $(this).parent().parent().find('.js-name-b2').php();
-		$(this).on('click', function () {
-			swal(nameProduct, "is added to wishlist !", "success");
+	// $('.js-addwish-b2').each(function () {
+	// 	var nameProduct = $(this).parent().parent().find('.js-name-b2').php();
+	// 	$(this).on('click', function () {
+	// 		swal(nameProduct, "is added to wishlist !", "success");
 
-			$(this).addClass('js-addedwish-b2');
-			$(this).off('click');
-		});
-	});
+	// 		$(this).addClass('js-addedwish-b2');
+	// 		$(this).off('click');
+	// 	});
+	// });
 
-	$('.js-addwish-detail').each(function () {
-		var nameProduct = $(this).parent().parent().parent().find('.js-name-detail').php();
+	// $('.js-addwish-detail').each(function () {
+	// 	var nameProduct = $(this).parent().parent().parent().find('.js-name-detail').php();
 
-		$(this).on('click', function () {
-			swal(nameProduct, "is added to wishlist !", "success");
+	// 	$(this).on('click', function () {
+	// 		swal(nameProduct, "is added to wishlist !", "success");
 
-			$(this).addClass('js-addedwish-detail');
-			$(this).off('click');
-		});
-	});
+	// 		$(this).addClass('js-addedwish-detail');
+	// 		$(this).off('click');
+	// 	});
+	// });
 
 	/*---------------------------------------------*/
 
-	$('.js-addcart-detail').each(function () {
-		var nameProduct = $(this).parent().parent().parent().parent().find('.js-name-detail').php();
-		$(this).on('click', function () {
-			swal(nameProduct, "is added to cart !", "success");
-		});
-	});
+	// $('.js-addcart-detail').each(function () {
+	// 	var nameProduct = $(this).parent().parent().parent().parent().find('.js-name-detail').php();
+	// 	$(this).on('click', function () {
+	// 		swal(nameProduct, "is added to cart !", "success");
+	// 	});
+	// });
 
 </script>
 <!--===============================================================================================-->

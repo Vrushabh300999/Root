@@ -56,7 +56,7 @@ include("public/sidebar.php");
                     <tr>
                       <td><?php echo $data->name; ?></td>
                       <td><img src="../images/<?php echo $data->image; ?>" width="100%" alt="" srcset=""></td>
-                      <td><?php echo $data->price; ?></td>
+                      <td>₹<?php echo $data->price; ?></td>
                       <td><?php echo $data->category_name; ?></td>
                       <td><?php echo date('jS M Y', strtotime($data->created_date)); ?></td>
                       <td>

@@ -76,9 +76,24 @@
 						<a href="login.php" class="icon-header-item cl2 hov-cl1 trans-04 p-l-22 p-r-11" data-notify="0">
 							<i class="zmdi zmdi-account"></i>
 						</a>
-
+						<?php
+						$user_id = $_SESSION['id'];
+						$sql = "SELECT tbl_products.*, COUNT(tbl_cart.id) as cart_items FROM tbl_products ";
+						$sql .= "INNER JOIN tbl_cart ON tbl_cart.product_id = tbl_products.id ";
+						$sql .= "WHERE tbl_cart.is_check_out = 0 ";
+						$sql .= "AND tbl_cart.user_id = " . $user_id . " ";
+						$sql .= "ORDER BY id DESC";
+						$statement = $db->prepare($sql);
+						$statement->execute();
+						if ($statement->rowCount() > 0) {
+							$data = $statement->fetch(PDO::FETCH_OBJ);
+							$cart_items = $data->cart_items;
+						} else {
+							$cart_items = 0;
+						}
+						?>
 						<div class="icon-header-item cl2 hov-cl1 trans-04 p-l-22 p-r-11 icon-header-noti js-show-cart"
-							data-notify="2">
+							data-notify="<?php echo $cart_items; ?>">
 							<i class="zmdi zmdi-shopping-cart"></i>
 						</div>
 
@@ -110,7 +125,7 @@
 				</a>
 
 				<div class="icon-header-item cl2 hov-cl1 trans-04 p-r-11 p-l-10 icon-header-noti js-show-cart"
-					data-notify="2">
+					data-notify="<?php echo $cart_items; ?>">
 					<i class="zmdi zmdi-shopping-cart"></i>
 				</div>
 
@@ -180,69 +195,62 @@
 
 			<div class="header-cart-content flex-w js-pscroll">
 				<ul class="header-cart-wrapitem w-full">
-					<li class="header-cart-item flex-w flex-t m-b-12">
-						<div class="header-cart-item-img">
-							<img src="images/item-cart-01.jpg" alt="IMG">
-						</div>
-
-						<div class="header-cart-item-txt p-t-8">
-							<a href="#" class="header-cart-item-name m-b-18 hov-cl1 trans-04">
-								White Shirt Pleat
-							</a>
-
-							<span class="header-cart-item-info">
-								1 x $19.00
-							</span>
-						</div>
-					</li>
-
-					<li class="header-cart-item flex-w flex-t m-b-12">
-						<div class="header-cart-item-img">
-							<img src="images/item-cart-02.jpg" alt="IMG">
-						</div>
-
-						<div class="header-cart-item-txt p-t-8">
-							<a href="#" class="header-cart-item-name m-b-18 hov-cl1 trans-04">
-								Converse All Star
-							</a>
-
-							<span class="header-cart-item-info">
-								1 x $39.00
-							</span>
-						</div>
-					</li>
-
-					<li class="header-cart-item flex-w flex-t m-b-12">
-						<div class="header-cart-item-img">
-							<img src="images/item-cart-03.jpg" alt="IMG">
-						</div>
-
-						<div class="header-cart-item-txt p-t-8">
-							<a href="#" class="header-cart-item-name m-b-18 hov-cl1 trans-04">
-								Nixon Porter Leather
-							</a>
-
-							<span class="header-cart-item-info">
-								1 x $17.00
-							</span>
-						</div>
-					</li>
+					<?php
+					$user_id = $_SESSION['id'];
+					$sql = "SELECT tbl_products.*, tbl_cart.quantity, tbl_cart.price as cart_price FROM tbl_products ";
+					$sql .= "INNER JOIN tbl_cart ON tbl_cart.product_id = tbl_products.id ";
+					$sql .= "WHERE tbl_cart.is_check_out = 0 ";
+					$sql .= "AND tbl_cart.user_id = " . $user_id . " ";
+					$sql .= "ORDER BY id DESC";
+					$statement = $db->prepare($sql);
+					$statement->execute();
+					if ($statement->rowCount() > 0) {
+						while ($data = $statement->fetch(PDO::FETCH_OBJ)) {
+							?>
+							<li class="header-cart-item flex-w flex-t m-b-12">
+								<div class="header-cart-item-img">
+									<img src="images/<?php echo $data->image; ?>" alt="IMG">
+								</div>
+								<div class="header-cart-item-txt p-t-8">
+									<a href="#" class="header-cart-item-name m-b-18 hov-cl1 trans-04">
+										<?php echo $data->name; ?>
+									</a>
+									<span class="header-cart-item-info">
+										<?php echo $data->quantity . ' x ₹' . $data->price; ?>
+									</span>
+								</div>
+							</li>
+							<?php
+						}
+					} else {
+						echo "Cart is empty";
+					}
+					?>
 				</ul>
 
 				<div class="w-full">
 					<div class="header-cart-total w-full p-tb-40">
-						Total: $75.00
+						<?php
+						$user_id = $_SESSION['id'];
+						$sql = "SELECT tbl_products.*, SUM(tbl_cart.price) as cart_price FROM tbl_products ";
+						$sql .= "INNER JOIN tbl_cart ON tbl_cart.product_id = tbl_products.id ";
+						$sql .= "WHERE tbl_cart.is_check_out = 0 ";
+						$sql .= "AND tbl_cart.user_id = " . $user_id . " ";
+						$sql .= "ORDER BY id DESC";
+						$statement = $db->prepare($sql);
+						$statement->execute();
+						if ($statement->rowCount() > 0) {
+							$data = $statement->fetch(PDO::FETCH_OBJ);
+							echo "Total: ₹" . $data->cart_price . " ";
+						} else {
+							echo "Total: ₹0";
+						}
+						?>
 					</div>
-
 					<div class="header-cart-buttons flex-w w-full">
 						<a href="shoping-cart.php"
 							class="flex-c-m stext-101 cl0 size-107 bg3 bor2 hov-btn3 p-lr-15 trans-04 m-r-8 m-b-10">
 							View Cart
-						</a>
-
-						<a href="shoping-cart.php"
-							class="flex-c-m stext-101 cl0 size-107 bg3 bor2 hov-btn3 p-lr-15 trans-04 m-b-10">
-							Check Out
 						</a>
 					</div>
 				</div>

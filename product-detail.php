@@ -55,7 +55,7 @@ include("public/header.php");
 						<?php echo $name; ?>
 					</h4>
 					<span class="mtext-106 cl2">
-						$<?php echo $price; ?>
+						₹<?php echo $price; ?>
 					</span>
 					<p class="stext-102 cl3 p-t-23">
 						<?php echo $description; ?>
@@ -76,7 +76,8 @@ include("public/header.php");
 								</div>
 							</div>
 							<button
-								class="flex-c-m stext-101 cl0 size-101 bg1 bor1 hov-btn1 p-lr-15 m-tb-10 trans-04 js-addcart-detail">
+								class="flex-c-m stext-101 cl0 size-101 bg1 bor1 hov-btn1 p-lr-15 m-tb-10 trans-04 js-addcart-detail"
+								onclick="addToCart(<?php echo $product_id; ?>, $('.num-product').val())">
 								Add to cart
 							</button>
 						</div>
