@@ -68,43 +68,57 @@
 					</div>
 
 					<!-- Icon header -->
-					<div class="wrap-icon-header flex-w flex-r-m">
+					<div class="wrap-icon-header flex-w flex-r-m main-menu">
 						<div class="icon-header-item cl2 hov-cl1 trans-04 p-l-22 p-r-11 js-show-modal-search">
 							<i class="zmdi zmdi-search"></i>
 						</div>
-
-						<a href="login.php" class="icon-header-item cl2 hov-cl1 trans-04 p-l-22 p-r-11" data-notify="0">
-							<i class="zmdi zmdi-account"></i>
-						</a>
-						<?php
-						$user_id = $_SESSION['id'];
-						$sql = "SELECT tbl_products.*, COUNT(tbl_cart.id) as cart_items FROM tbl_products ";
-						$sql .= "INNER JOIN tbl_cart ON tbl_cart.product_id = tbl_products.id ";
-						$sql .= "WHERE tbl_cart.is_check_out = 0 ";
-						$sql .= "AND tbl_cart.user_id = " . $user_id . " ";
-						$sql .= "ORDER BY id DESC";
-						$statement = $db->prepare($sql);
-						$statement->execute();
-						if ($statement->rowCount() > 0) {
-							$data = $statement->fetch(PDO::FETCH_OBJ);
-							$cart_items = $data->cart_items;
-						} else {
-							$cart_items = 0;
-						}
-						?>
-						<div class="icon-header-item cl2 hov-cl1 trans-04 p-l-22 p-r-11 icon-header-noti js-show-cart"
-							data-notify="<?php echo $cart_items; ?>">
-							<i class="zmdi zmdi-shopping-cart"></i>
-						</div>
-
-						<a href="#"
-							class="dis-block icon-header-item cl2 hov-cl1 trans-04 p-l-22 p-r-11 icon-header-noti"
-							data-notify="0">
-							<i class="zmdi zmdi-favorite-outline"></i>
-						</a>
+						<li class="icon-header-item cl2 hov-cl1 trans-04 p-l-22 p-r-11">
+							<a href="#"><i class="zmdi zmdi-account" style="font-size: x-large;"></i></a>
+							<ul class="sub-menu">
+								<?php
+								if (isset($_SESSION['id'])) {
+									?>
+									<li><a class="dropdown-item" href="profile.php">Profile</a></li>
+									<li><a class="dropdown-item" href="order.php">Your Orders</a></li>
+									<li><a class="dropdown-item" href="logout.php">Logout</a></li>
+									<?php
+								} else {
+									?>
+									<li><a class="dropdown-item" href="login.php">Login</a></li>
+									<?php
+								}
+								?>
+							</ul>
+						</li>
 					</div>
-				</nav>
+					<?php
+					$user_id = $_SESSION['id'];
+					$sql = "SELECT tbl_products.*, COUNT(tbl_cart.id) as cart_items FROM tbl_products ";
+					$sql .= "INNER JOIN tbl_cart ON tbl_cart.product_id = tbl_products.id ";
+					$sql .= "WHERE tbl_cart.is_check_out = 0 ";
+					$sql .= "AND tbl_cart.user_id = " . $user_id . " ";
+					$sql .= "ORDER BY id DESC";
+					$statement = $db->prepare($sql);
+					$statement->execute();
+					if ($statement->rowCount() > 0) {
+						$data = $statement->fetch(PDO::FETCH_OBJ);
+						$cart_items = $data->cart_items;
+					} else {
+						$cart_items = 0;
+					}
+					?>
+					<div class="icon-header-item cl2 hov-cl1 trans-04 p-l-22 p-r-11 icon-header-noti js-show-cart"
+						data-notify="<?php echo $cart_items; ?>">
+						<i class="zmdi zmdi-shopping-cart"></i>
+					</div>
+
+					<a href="#" class="dis-block icon-header-item cl2 hov-cl1 trans-04 p-l-22 p-r-11 icon-header-noti"
+						data-notify="0">
+						<i class="zmdi zmdi-favorite-outline"></i>
+					</a>
 			</div>
+			</nav>
+		</div>
 		</div>
 
 		<!-- Header Mobile -->
@@ -119,11 +133,24 @@
 				<div class="icon-header-item cl2 hov-cl1 trans-04 p-r-11 js-show-modal-search">
 					<i class="zmdi zmdi-search"></i>
 				</div>
-
-				<a href="#" class="icon-header-item cl2 hov-cl1 trans-04 p-l-22 p-r-11" data-notify="0">
-					<i class="zmdi zmdi-account"></i>
-				</a>
-
+				<li class="icon-header-item cl2 hov-cl1 trans-04 p-l-22 p-r-11">
+					<a href="#" class="mobile-account"><i class="zmdi zmdi-account" style="font-size: x-large;"></i></a>
+					<ul class="sub-menu mobile-menu">
+						<?php
+						if (isset($_SESSION['id'])) {
+							?>
+							<li><a class="dropdown-item" href="profile.php">Profile</a></li>
+							<li><a class="dropdown-item" href="order.php">Your Orders</a></li>
+							<li><a class="dropdown-item" href="logout.php">Logout</a></li>
+							<?php
+						} else {
+							?>
+							<li><a class="dropdown-item" href="login.php">Login</a></li>
+							<?php
+						}
+						?>
+					</ul>
+				</li>
 				<div class="icon-header-item cl2 hov-cl1 trans-04 p-r-11 p-l-10 icon-header-noti js-show-cart"
 					data-notify="<?php echo $cart_items; ?>">
 					<i class="zmdi zmdi-shopping-cart"></i>

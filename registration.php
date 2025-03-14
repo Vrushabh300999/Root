@@ -69,7 +69,7 @@ include("public/header.php");
 		<div class="flex-w flex-tr">
 			<div class="size-210 bor10 p-lr-70 p-t-55 p-b-70 p-lr-15-lg w-full-md" style="margin: auto;">
 				<form method="post" enctype="multipart/form-data">
-					<h4 class="mtext-105 cl2 txt-center p-b-30">Ragistetion</h4>
+					<h4 class="mtext-105 cl2 txt-center p-b-30">Registration</h4>
 					<div class="mb-3">
 						<label for="exampleFormControlInput1" class="form-label">Name</label>
 						<input type="text" name="username" class="form-control" placeholder="Enter your Name">

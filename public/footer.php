@@ -394,6 +394,13 @@
 <!--===============================================================================================-->
 <script src="vendor/perfect-scrollbar/perfect-scrollbar.min.js"></script>
 <script>
+	$('.mobile-account').on('click', function () {
+		$(this).siblings('.mobile-menu').toggle();
+		$(this).siblings('.mobile-menu').css('visibility', 'visible');
+		$(this).siblings('.mobile-menu').css('opacity', '1');
+		$(this).siblings('.mobile-menu').css('top', '30px');
+		$(this).siblings('.mobile-menu').css('left', '0');
+	});
 	$('.js-pscroll').each(function () {
 		$(this).css('position', 'relative');
 		$(this).css('overflow', 'hidden');

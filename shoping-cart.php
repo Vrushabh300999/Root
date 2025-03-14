@@ -19,7 +19,7 @@ include("public/header.php");
 
 
 <!-- Shoping Cart -->
-<form class="bg0 p-t-75 p-b-85">
+<form action="ajax.php?action=order" method="POST" class="bg0 p-t-75 p-b-85">
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-10 col-xl-7 m-lr-auto m-b-50">
@@ -45,13 +45,18 @@ include("public/header.php");
 							if ($statement->rowCount() > 0) {
 								while ($data = $statement->fetch(PDO::FETCH_OBJ)) {
 									?>
-									<tr class="table_row">
+									<tr class="table_row" style="height: 115px;">
 										<td class="column-1">
 											<div class="how-itemcart1">
 												<img src="images/<?php echo $data->image; ?>" alt="IMG">
 											</div>
 										</td>
-										<td class="column-2"><?php echo $data->name; ?></td>
+										<td class="column-2">
+											<input type="hidden" name="product_id" value="<?php echo $data->id; ?>">
+											<input type="hidden" name="product_price" value="<?php echo $data->price; ?>">
+											<input type="hidden" name="product_quantity" value="<?php echo $data->quantity; ?>">
+											<?php echo $data->name; ?>
+										</td>
 										<td class="column-3 p-l-10"><?php echo '₹' . $data->price; ?></td>
 										<td class="column-4">
 											<div class="wrap-num-product flex-w m-l-auto m-r-0">
@@ -72,7 +77,11 @@ include("public/header.php");
 									<?php
 								}
 							} else {
-								echo "Cart is empty";
+								?>
+								<tr>
+									<td colspan="5" class="text-center">Cart is empty</td>
+								</tr>
+								<?php
 							}
 							?>
 						</table>
@@ -128,6 +137,7 @@ include("public/header.php");
 							$statement->execute();
 							if ($statement->rowCount() > 0) {
 								$data = $statement->fetch(PDO::FETCH_OBJ);
+								echo "<input type='hidden' name='total_price' value='" . $data->cart_price . "'>";
 								echo "₹" . $data->cart_price . " ";
 							} else {
 								echo "₹0";
@@ -145,9 +155,6 @@ include("public/header.php");
 		</div>
 	</div>
 </form>
-
-
-
 <?php
 include("public/footer.php");
 ?>
